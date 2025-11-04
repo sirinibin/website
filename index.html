@@ -388,6 +388,39 @@
         transform: translateZ(0) !important;
         will-change: transform !important;
       }
+
+      /* Fix mobile menu - ensure it's closed by default */
+      @media (max-width: 1024px) {
+        /* Force mobile menu closed on page load */
+        .dt-mobile-header {
+          transform: translateX(100%) !important;
+          transition: transform 0.3s ease !important;
+          right: -100% !important;
+        }
+
+        /* Override for when menu should be open */
+        body.dt-mobile-menu-on .dt-mobile-header,
+        body.mobile-menu-open .dt-mobile-header,
+        body.show-mobile-menu .dt-mobile-header,
+        .masthead.mobile-menu-open ~ .dt-mobile-header,
+        html.mobile-menu-open .dt-mobile-header {
+          transform: translateX(0) !important;
+          right: 0 !important;
+        }
+
+        /* Additional fallback - hide until explicitly shown */
+        body:not(.dt-mobile-menu-on):not(.mobile-menu-open) .dt-mobile-header {
+          visibility: hidden !important;
+          pointer-events: none !important;
+        }
+
+        /* Show when menu is active */
+        body.dt-mobile-menu-on .dt-mobile-header,
+        body.mobile-menu-open .dt-mobile-header {
+          visibility: visible !important;
+          pointer-events: auto !important;
+        }
+      }
     </style>
   </head>
   <body
