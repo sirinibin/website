@@ -323,6 +323,72 @@
         }
       ]
     </script>
+    <style>
+      /* Fix blurred logo on scroll - Comprehensive solution for The7 theme */
+
+      /* Target all possible logo containers */
+      .masthead .branding img,
+      .masthead .branding .mobile-logo,
+      .masthead .logo img,
+      .masthead img,
+      .dt-mobile-header img,
+      .mobile-header img,
+      .phantom-header img,
+      body.first-switch img,
+      body.second-switch img,
+      body.sticky-mobile-header img,
+      .branding a img,
+      .mobile-branding img,
+      #site-logo img,
+      .site-logo img,
+      img.mobile-logo,
+      img.preload-me {
+        -webkit-backface-visibility: hidden !important;
+        backface-visibility: hidden !important;
+        -webkit-transform: translateZ(0) !important;
+        transform: translateZ(0) !important;
+        -webkit-font-smoothing: subpixel-antialiased !important;
+        image-rendering: -webkit-optimize-contrast !important;
+        image-rendering: crisp-edges !important;
+        image-rendering: pixelated !important;
+        will-change: auto !important;
+        -webkit-filter: none !important;
+        filter: none !important;
+      }
+
+      /* Target all header containers */
+      .masthead,
+      .dt-mobile-header,
+      .mobile-header,
+      .phantom-header,
+      body.first-switch .masthead,
+      body.second-switch .masthead,
+      body.sticky-mobile-header .masthead,
+      .header,
+      .site-header,
+      .top-bar {
+        -webkit-backface-visibility: hidden !important;
+        backface-visibility: hidden !important;
+        -webkit-transform: translateZ(0) !important;
+        transform: translateZ(0) !important;
+        will-change: transform !important;
+        -webkit-filter: none !important;
+        filter: none !important;
+      }
+
+      /* Target elements during scroll animations */
+      body.first-switch-sticky .masthead,
+      body.second-switch-sticky .masthead,
+      body.mobile-header-sticky .masthead,
+      .masthead.sticky,
+      .masthead.fixed {
+        -webkit-backface-visibility: hidden !important;
+        backface-visibility: hidden !important;
+        -webkit-transform: translateZ(0) !important;
+        transform: translateZ(0) !important;
+        will-change: transform !important;
+      }
+    </style>
   </head>
   <body
     class="home page-template page-template-template-microsite page-template-template-microsite-php page page-id-14 wp-custom-logo wp-embed-responsive the7-core-ver-2.5.2 one-page-row transparent slideshow-on dt-responsive-on right-mobile-menu-close-icon ouside-menu-close-icon rotate-medium-mobile-menu-close-icon fade-medium-menu-close-icon srcset-enabled btn-flat custom-btn-color custom-btn-hover-color phantom-fade phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-left first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on popup-message-style dt-fa-compatibility the7-ver-9.2.1-b1 elementor-default elementor-kit-1610 elementor-page elementor-page-14"
@@ -2714,6 +2780,28 @@
                                           expertise
                                         </strong>
                                       </h4>
+                                      <p
+                                        style="
+                                          text-align: center;
+                                          margin-top: 20px;
+                                        "
+                                      >
+                                        <a
+                                          href="zatca-phase-2-services.html"
+                                          style="
+                                            background-color: #64a66e;
+                                            color: white;
+                                            padding: 12px 24px;
+                                            text-decoration: none;
+                                            border-radius: 5px;
+                                            font-weight: bold;
+                                            display: inline-block;
+                                          "
+                                        >
+                                          Learn More About Our ZATCA Phase 2
+                                          Services →
+                                        </a>
+                                      </p>
                                     </div>
                                   </div>
                                 </div>
@@ -2750,7 +2838,10 @@
                                 >
                                   <div class="elementor-widget-container">
                                     <div class="elementor-image">
-                                      <a href="" class="not-active">
+                                      <a
+                                        href="zatca-phase-2-services.html"
+                                        title="Learn more about our Zatca Phase 2 E-invoicing Services"
+                                      >
                                         <img
                                           src="images/services/zatca-e-invoicing.png"
                                           title="Zatca Phase 2 E-invoicing Solutions | Expert Implementation Services Saudi Arabia"

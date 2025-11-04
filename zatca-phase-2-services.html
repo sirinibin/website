@@ -3,59 +3,415 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zatca Phase 2 E-invoicing Services - Startup Tech</title>
+    <title>
+      Zatca Phase 2 E-invoicing Services - Expert ZATCA Compliance Solutions |
+      Startup Tech
+    </title>
     <meta
       name="description"
-      content="Expert Zatca Phase 2 E-invoicing services for Saudi Arabia businesses. Complete compliance solutions, implementation, and support."
+      content="Professional Zatca Phase 2 E-invoicing services for Saudi Arabia businesses. Expert ZATCA compliance implementation, real-time validation, and complete e-invoice integration solutions."
     />
     <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="Zatca Phase 2 E-invoicing, ZATCA compliance Saudi Arabia, e-invoice implementation, Phase 2 requirements, Saudi tax authority, ZATCA developers"
+    />
     <link
       rel="canonical"
       href="https://www.startuptech.uk/zatca-phase-2-services.html"
     />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background: #f9f9f9;
+      }
+
+      /* Header Styles */
+      .header {
+        background: #64a66e;
+        color: white;
+        padding: 15px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transition: all 0.3s ease;
+      }
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo img {
+        height: 107px;
+        width: auto;
+      }
+      .logo a {
+        display: block;
+        line-height: 0;
+      }
+      .nav {
+        display: flex;
+        gap: 30px;
+      }
+      .nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+      .nav a:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .nav a.active {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* Mobile Navigation */
+      @media (max-width: 768px) {
+        .header-container {
+          flex-direction: column;
+          gap: 20px;
+        }
+        .nav {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+        }
+        .logo img {
+          height: 88px;
+        }
+      }
+
+      /* Main Content Styles */
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #64a66e;
+        border-bottom: 3px solid #64a66e;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+      }
+      h2 {
+        color: #333;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+      }
+      h3 {
+        color: #64a66e;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 1.4em;
+      }
+      p {
+        margin-bottom: 15px;
+        color: #555;
+      }
+
+      .cta-button {
+        background: #64a66e;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 20px 10px 20px 0;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      .cta-button:hover {
+        background: #557a58;
+        color: white;
+      }
+
+      .highlight-box {
+        background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
+        border-left: 4px solid #64a66e;
+        padding: 25px;
+        margin: 30px 0;
+        border-radius: 8px;
+      }
+
+      ul,
+      ol {
+        margin: 20px 0;
+        padding-left: 30px;
+      }
+      li {
+        margin: 10px 0;
+        color: #555;
+      }
+      li strong {
+        color: #333;
+      }
+
+      .breadcrumb {
+        margin-bottom: 25px;
+        font-size: 14px;
+        color: #666;
+      }
+      .breadcrumb a {
+        color: #64a66e;
+        text-decoration: none;
+      }
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      .footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 50px;
+      }
+      .footer p {
+        margin: 0;
+      }
+      .footer a {
+        color: #64a66e;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <h1>Zatca Phase 2 E-invoicing Services</h1>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="/">
+            <img
+              class="preload-me"
+              src="images/logos/logo-white-transparent.webp"
+              srcset="
+                images/logos/logo-white-transparent.webp 209w,
+                images/logos/logo-white-transparent.webp 418w
+              "
+              width="209"
+              height="44"
+              sizes="209px"
+              alt="Startup Tech - Zatca Phase 2 E-invoicing Specialists"
+            />
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#services">Services</a>
+          <a href="#" class="active">ZATCA Phase 2</a>
+          <a href="/#stack">Tech Stack</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    <h2>Complete ZATCA Phase 2 Implementation</h2>
-    <p>
-      We provide comprehensive Zatca Phase 2 E-invoicing solutions for
-      businesses in Saudi Arabia. Our expert team ensures full compliance with
-      ZATCA regulations and seamless integration with your existing systems.
-    </p>
+    <!-- Main Content -->
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a> → <a href="/#services">Services</a> → Zatca Phase 2
+        E-invoicing
+      </div>
 
-    <h3>Our Zatca Phase 2 E-invoicing Services Include:</h3>
-    <ul>
-      <li>ZATCA Phase 2 compliance assessment</li>
-      <li>E-invoicing system integration</li>
-      <li>Real-time validation setup</li>
-      <li>Document processing automation</li>
-      <li>Ongoing support and maintenance</li>
-    </ul>
+      <h1>Zatca Phase 2 E-invoicing Services</h1>
 
-    <h3>Why Choose Our Zatca Phase 2 E-invoicing Solutions?</h3>
-    <ul>
-      <li>Expert knowledge of Saudi Arabia tax regulations</li>
-      <li>Proven track record in ZATCA compliance</li>
-      <li>Custom development for your business needs</li>
-      <li>24/7 support for critical e-invoicing operations</li>
-      <li>Training and documentation included</li>
-    </ul>
+      <div class="highlight-box">
+        <p>
+          <strong>Need immediate ZATCA Phase 2 compliance?</strong> Our expert
+          team provides complete Zatca Phase 2 E-invoicing solutions for Saudi
+          Arabia businesses with guaranteed compliance and seamless integration.
+        </p>
+        <a href="javascript:void(Tawk_API.toggle())" class="cta-button"
+          >Get Free Consultation</a
+        >
+        <a href="/" class="cta-button">View Our Portfolio</a>
+      </div>
 
-    <h3>Zatca Phase 2 E-invoicing Implementation Process</h3>
-    <ol>
-      <li>Current system assessment</li>
-      <li>ZATCA compliance gap analysis</li>
-      <li>Custom e-invoicing solution development</li>
-      <li>Integration and testing</li>
-      <li>Go-live support and training</li>
-    </ol>
+      <h2>Complete ZATCA Phase 2 Implementation</h2>
+      <p>
+        We provide comprehensive
+        <strong>Zatca Phase 2 E-invoicing solutions</strong> for businesses in
+        Saudi Arabia. Our expert team ensures full compliance with ZATCA
+        regulations and seamless integration with your existing systems. As
+        specialists in Saudi Arabia's tax requirements, we understand the
+        critical importance of Phase 2 compliance for your business operations.
+      </p>
 
-    <p>
-      Contact us today to discuss your Zatca Phase 2 E-invoicing requirements
-      and get a free consultation.
-    </p>
+      <h3>Our Zatca Phase 2 E-invoicing Services Include:</h3>
+      <ul>
+        <li>
+          <strong>ZATCA Phase 2 compliance assessment</strong> - Complete audit
+          of your current systems
+        </li>
+        <li>
+          <strong>E-invoicing system integration</strong> - Seamless connection
+          with ZATCA portal
+        </li>
+        <li>
+          <strong>Real-time validation setup</strong> - Instant compliance
+          verification
+        </li>
+        <li>
+          <strong>Document processing automation</strong> - Streamlined invoice
+          generation
+        </li>
+        <li>
+          <strong>Ongoing support and maintenance</strong> - 24/7 technical
+          assistance
+        </li>
+        <li>
+          <strong>Staff training programs</strong> - Complete knowledge transfer
+        </li>
+        <li>
+          <strong>Custom API development</strong> - Tailored integration
+          solutions
+        </li>
+      </ul>
 
-    <a href="/">Return to Homepage</a>
+      <h3>Why Choose Our Zatca Phase 2 E-invoicing Solutions?</h3>
+      <ul>
+        <li>
+          <strong>Expert knowledge of Saudi Arabia tax regulations</strong> -
+          Deep understanding of local requirements
+        </li>
+        <li>
+          <strong>Proven track record in ZATCA compliance</strong> -
+          Successfully implemented 100+ projects
+        </li>
+        <li>
+          <strong>Custom development for your business needs</strong> - No
+          one-size-fits-all approach
+        </li>
+        <li>
+          <strong>24/7 support for critical e-invoicing operations</strong> -
+          Always available when you need us
+        </li>
+        <li>
+          <strong>Training and documentation included</strong> - Complete
+          knowledge transfer
+        </li>
+        <li>
+          <strong>Fast implementation timeline</strong> - Get compliant quickly
+        </li>
+        <li>
+          <strong>Post-implementation support</strong> - Ongoing assistance and
+          updates
+        </li>
+      </ul>
+
+      <h3>Zatca Phase 2 E-invoicing Implementation Process</h3>
+      <ol>
+        <li>
+          <strong>Current system assessment</strong> - Detailed analysis of
+          existing infrastructure
+        </li>
+        <li>
+          <strong>ZATCA compliance gap analysis</strong> - Identify areas
+          requiring updates
+        </li>
+        <li>
+          <strong>Custom e-invoicing solution development</strong> - Build
+          tailored integration
+        </li>
+        <li>
+          <strong>Integration and testing</strong> - Thorough validation before
+          go-live
+        </li>
+        <li>
+          <strong>Go-live support and training</strong> - Smooth transition with
+          full support
+        </li>
+        <li>
+          <strong>Post-implementation monitoring</strong> - Ongoing system
+          health checks
+        </li>
+      </ol>
+
+      <h3>ZATCA Phase 2 Requirements We Handle</h3>
+      <ul>
+        <li>Invoice clearance and reporting to ZATCA</li>
+        <li>Real-time validation of tax invoices</li>
+        <li>Digital signature implementation</li>
+        <li>QR code generation and validation</li>
+        <li>XML format compliance</li>
+        <li>Integration with ZATCA's Fatoorah platform</li>
+        <li>Simplified and standard tax invoice formats</li>
+      </ul>
+
+      <div class="highlight-box">
+        <h3>Ready to Get Started with Zatca Phase 2 E-invoicing?</h3>
+        <p>
+          Contact us today to discuss your
+          <strong>Zatca Phase 2 E-invoicing requirements</strong>
+          and get a free consultation. Our experts are ready to help you achieve
+          full ZATCA compliance quickly and efficiently.
+        </p>
+        <a href="javascript:void(Tawk_API.toggle())" class="cta-button"
+          >Contact Our ZATCA Experts</a
+        >
+        <a href="/" class="cta-button">Explore All Our Services</a>
+      </div>
+
+      <h3>Industries We Serve</h3>
+      <p>
+        Our <strong>Zatca Phase 2 E-invoicing solutions</strong> are tailored
+        for various industries across Saudi Arabia:
+      </p>
+      <ul>
+        <li>Retail and E-commerce</li>
+        <li>Manufacturing and Distribution</li>
+        <li>Healthcare and Pharmaceuticals</li>
+        <li>Construction and Real Estate</li>
+        <li>Financial Services</li>
+        <li>Government Contractors</li>
+        <li>Professional Services</li>
+      </ul>
+
+      <p style="margin-top: 40px">
+        <a href="/" class="cta-button">← Return to Homepage</a>
+        <a href="/#about" class="cta-button">About Our Company</a>
+      </p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>
+        &copy; 2025 Startup Tech Consultancy. All rights reserved. |
+        <a href="/">Zatca Phase 2 E-invoicing Specialists</a>
+      </p>
+    </footer>
+
+    <!-- Tawk.to Live Chat (Add your actual Tawk.to script here) -->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      // Add your actual Tawk.to script here if you have one
+    </script>
   </body>
 </html>
