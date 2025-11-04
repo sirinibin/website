@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.startuptech.uk/</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.startuptech.uk/images/slider-background5.jpeg</image:loc>
+      <image:title>Zatca Phase 2 E-invoicing Solutions Saudi Arabia</image:title>
+      <image:caption>Expert ZATCA Phase 2 E-invoicing Implementation Services</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.startuptech.uk/images/invoice.png</image:loc>
+      <image:title>Zatca Phase 2 E-invoicing Sample Document</image:title>
+      <image:caption>Generated Zatca Phase 2 E-invoice Preview</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.startuptech.uk/images/zatca_verification.png</image:loc>
+      <image:title>Zatca Phase 2 E-invoicing Validation Status</image:title>
+      <image:caption>Real-time Zatca Phase 2 E-invoicing Validation</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.startuptech.uk/images/scanning.png</image:loc>
+      <image:title>Zatca Phase 2 E-invoicing Document Scanning</image:title>
+      <image:caption>Zatca Phase 2 E-invoicing Document Processing</image:caption>
+    </image:image>
+  </url>
+</urlset>

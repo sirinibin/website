@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Prioritize ZATCA content
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Block unnecessary crawling
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/dt-the7/
+Disallow: /css/
+Disallow: /js/
+Disallow: /?s=
+Disallow: /*?
+Disallow: /cgi-bin/
+
+# Allow important assets
+Allow: /images/
+Allow: /css/assets/
+Allow: /js/frontend.min.js
+
+# Sitemap locations
+Sitemap: https://www.startuptech.uk/sitemap.xml
+Sitemap: https://www.startuptech.uk/sitemap_zatca.xml
