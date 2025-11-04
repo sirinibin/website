@@ -389,39 +389,225 @@
         will-change: transform !important;
       }
 
-      /* Fix mobile menu - ensure it's closed by default */
+      /* Complete Mobile Menu Solution */
       @media (max-width: 1024px) {
-        /* Force mobile menu closed on page load */
+        /* 1. Keep menu closed by default - force it off screen */
         .dt-mobile-header {
-          transform: translateX(100%) !important;
-          transition: transform 0.3s ease !important;
-          right: -100% !important;
+          position: fixed !important;
+          top: 0 !important;
+          left: -100% !important;
+          width: 280px !important;
+          height: 100vh !important;
+          background: rgba(0, 0, 0, 0.95) !important;
+          z-index: 9999 !important;
+          transition: left 0.3s ease !important;
+          overflow-y: auto !important;
+          box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5) !important;
         }
 
-        /* Override for when menu should be open */
+        /* 2. Show menu when opened (multiple possible classes) */
         body.dt-mobile-menu-on .dt-mobile-header,
         body.mobile-menu-open .dt-mobile-header,
         body.show-mobile-menu .dt-mobile-header,
-        .masthead.mobile-menu-open ~ .dt-mobile-header,
-        html.mobile-menu-open .dt-mobile-header {
-          transform: translateX(0) !important;
-          right: 0 !important;
+        .dt-mobile-header.mobile-menu-open,
+        .dt-mobile-header.show {
+          left: 0 !important;
         }
 
-        /* Additional fallback - hide until explicitly shown */
-        body:not(.dt-mobile-menu-on):not(.mobile-menu-open) .dt-mobile-header {
-          visibility: hidden !important;
-          pointer-events: none !important;
+        /* 3. Style the close icon */
+        .dt-close-mobile-menu-icon {
+          position: absolute !important;
+          top: 15px !important;
+          right: 15px !important;
+          width: 30px !important;
+          height: 30px !important;
+          cursor: pointer !important;
+          z-index: 10000 !important;
+          background: rgba(255, 255, 255, 0.1) !important;
+          border-radius: 50% !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
         }
 
-        /* Show when menu is active */
-        body.dt-mobile-menu-on .dt-mobile-header,
-        body.mobile-menu-open .dt-mobile-header {
-          visibility: visible !important;
-          pointer-events: auto !important;
+        .close-line-wrap {
+          position: relative !important;
+          width: 15px !important;
+          height: 15px !important;
+        }
+
+        .close-line {
+          position: absolute !important;
+          top: 50% !important;
+          left: 50% !important;
+          width: 15px !important;
+          height: 2px !important;
+          background: white !important;
+          transform-origin: center !important;
+        }
+
+        .close-line:nth-child(1) {
+          transform: translate(-50%, -50%) rotate(45deg) !important;
+        }
+
+        .close-line:nth-child(2) {
+          transform: translate(-50%, -50%) rotate(-45deg) !important;
+        }
+
+        .close-line:nth-child(3) {
+          display: none !important;
+        }
+
+        /* 4. Style the menu items */
+        #mobile-menu {
+          margin-top: 60px !important;
+          padding: 20px !important;
+          list-style: none !important;
+        }
+
+        #mobile-menu li {
+          margin-bottom: 0 !important;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+
+        #mobile-menu a {
+          color: white !important;
+          font-size: 16px !important;
+          padding: 15px 0 !important;
+          text-decoration: none !important;
+          display: block !important;
+          transition: background 0.3s ease !important;
+        }
+
+        #mobile-menu a:hover {
+          background: rgba(255, 255, 255, 0.1) !important;
+          padding-left: 10px !important;
+        }
+
+        /* 5. Add overlay background */
+        body.dt-mobile-menu-on::before,
+        body.mobile-menu-open::before,
+        body.show-mobile-menu::before {
+          content: "" !important;
+          position: fixed !important;
+          top: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          background: rgba(0, 0, 0, 0.5) !important;
+          z-index: 9998 !important;
         }
       }
     </style>
+    <script>
+      // Complete Mobile Menu Functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth <= 1024) {
+          const mobileHeader = document.querySelector(".dt-mobile-header");
+          const closeIcon = document.querySelector(
+            ".dt-close-mobile-menu-icon"
+          );
+
+          // 1. Ensure menu is closed on page load
+          function closeMobileMenu() {
+            document.body.classList.remove(
+              "dt-mobile-menu-on",
+              "mobile-menu-open",
+              "show-mobile-menu"
+            );
+            if (mobileHeader) {
+              mobileHeader.classList.remove("mobile-menu-open", "show");
+              mobileHeader.style.left = "-100%";
+            }
+          }
+
+          // 2. Close menu on page load
+          closeMobileMenu();
+
+          // 3. Handle close icon click
+          if (closeIcon) {
+            closeIcon.addEventListener("click", function (e) {
+              e.preventDefault();
+              e.stopPropagation();
+              closeMobileMenu();
+            });
+          }
+
+          // 4. Watch for theme's menu open actions
+          const observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+              if (
+                mutation.type === "attributes" &&
+                mutation.attributeName === "class"
+              ) {
+                const target = mutation.target;
+                if (target === document.body) {
+                  if (
+                    target.classList.contains("dt-mobile-menu-on") ||
+                    target.classList.contains("mobile-menu-open") ||
+                    target.classList.contains("show-mobile-menu")
+                  ) {
+                    if (mobileHeader) {
+                      mobileHeader.style.left = "0";
+                    }
+                  }
+                }
+              }
+            });
+          });
+
+          observer.observe(document.body, {
+            attributes: true,
+            attributeFilter: ["class"],
+          });
+
+          // 5. Close menu when clicking outside
+          if (mobileHeader) {
+            mobileHeader.addEventListener("click", function (e) {
+              if (e.target === mobileHeader) {
+                closeMobileMenu();
+              }
+            });
+          }
+        }
+      });
+
+      // Fix Revolution Slider duplicate IDs
+      document.addEventListener("DOMContentLoaded", function () {
+        // Remove duplicate slider elements to fix ID conflicts
+        setTimeout(function () {
+          const duplicateIds = [
+            "slider-2-slide-5-layer-13",
+            "slider-2-slide-5-layer-14",
+            "slider-2-slide-5-layer-4",
+            "slider-2-slide-5-layer-6",
+            "slider-2-slide-5-layer-17",
+            "slider-2-slide-5-layer-10",
+            "slider-2-slide-5-layer-19",
+            "slider-2-slide-5-layer-20",
+            "slider-2-slide-8-layer-13",
+            "slider-2-slide-8-layer-14",
+            "slider-2-slide-8-layer-4",
+            "slider-2-slide-8-layer-6",
+            "slider-2-slide-8-layer-17",
+            "slider-2-slide-8-layer-15",
+            "slider-2-slide-8-layer-10",
+            "slider-2-slide-8-layer-19",
+            "slider-2-slide-8-layer-20",
+          ];
+
+          duplicateIds.forEach(function (id) {
+            const elements = document.querySelectorAll("#" + id);
+            // Remove all but the first element with this ID
+            for (let i = 1; i < elements.length; i++) {
+              if (elements[i] && elements[i].parentNode) {
+                elements[i].parentNode.removeChild(elements[i]);
+              }
+            }
+          });
+        }, 100);
+      });
+    </script>
   </head>
   <body
     class="home page-template page-template-template-microsite page-template-template-microsite-php page page-id-14 wp-custom-logo wp-embed-responsive the7-core-ver-2.5.2 one-page-row transparent slideshow-on dt-responsive-on right-mobile-menu-close-icon ouside-menu-close-icon rotate-medium-mobile-menu-close-icon fade-medium-menu-close-icon srcset-enabled btn-flat custom-btn-color custom-btn-hover-color phantom-fade phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-left first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on popup-message-style dt-fa-compatibility the7-ver-9.2.1-b1 elementor-default elementor-kit-1610 elementor-page elementor-page-14"
