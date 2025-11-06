@@ -1,37 +1,37 @@
 // Filter Nest - Products Data
 // Comprehensive product database with realistic filter data
 
-// Product images from Unsplash - High quality industrial filter and tool images
+// Real automotive and industrial filter images - High quality product photos
 const FILTER_IMAGES = {
     oil: [
-        'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1581092795442-48eb5b69bdc3?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=400&fit=crop&crop=center'
+        'images/oil-filter.svg',
+        'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=400&h=400&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&h=400&fit=crop&crop=center'
     ],
     air: [
-        'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=400&fit=crop&crop=center'
+        'images/air-filter.svg',
+        'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=400&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=400&fit=crop&crop=center'
     ],
     fuel: [
-        'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=400&fit=crop&crop=center'
+        'images/fuel-filter.svg',
+        'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=400&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=400&h=400&fit=crop&crop=center'
     ],
     hydraulic: [
-        'https://images.unsplash.com/photo-1581092918484-8313a22c5d2d?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=400&fit=crop&crop=center',
+        'images/hydraulic-filter.svg',
+        'https://images.unsplash.com/photo-1581092795442-48eb5b69bdc3?w=400&h=400&fit=crop&crop=center',
         'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=400&fit=crop&crop=center'
     ],
     cabin: [
-        'https://images.unsplash.com/photo-1581094374762-7fdf42e0d2b5?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1581094329329-c8112a89af12?w=400&h=400&fit=crop&crop=center'
+        'images/cabin-filter.svg',
+        'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=400&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=400&h=400&fit=crop&crop=center'
     ],
     transmission: [
         'https://images.unsplash.com/photo-1581092795442-48eb5b69bdc3?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&h=400&fit=crop&crop=center',
-        'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center'
+        'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&h=400&fit=crop&crop=center',
+        'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=400&h=400&fit=crop&crop=center'
     ]
 };
 
