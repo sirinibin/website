@@ -2,14 +2,14 @@
 
 /* CSS Variables */
 :root {
-    /* Colors - Improved Black & Yellow Theme */
-    --primary: #F7B801;
-    --primary-light: #FFD23F;
-    --primary-dark: #E6A000;
-    --secondary: #1A1A1A;
-    --secondary-light: #2D2D2D;
-    --accent: #FFC107;
-    --accent-light: #FFEB3B;
+    /* Colors - Professional Industrial Theme */
+    --primary: #2563EB;
+    --primary-light: #3B82F6;
+    --primary-dark: #1D4ED8;
+    --secondary: #1E293B;
+    --secondary-light: #334155;
+    --accent: #F97316;
+    --accent-light: #FB923C;
     
     /* Grays */
     --gray-50: #FAFAFA;
@@ -409,7 +409,7 @@ a:hover {
 .hero-background {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #F7B801 0%, #FFD23F 30%, #1A1A1A 70%, #2D2D2D 100%);
+    background: linear-gradient(135deg, #2563EB 0%, #3B82F6 30%, #1E293B 70%, #334155 100%);
 }
 
 .hero-overlay {
