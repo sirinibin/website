@@ -66,6 +66,9 @@ class FilterNestApp {
         document.addEventListener('click', this.handleModalClose.bind(this));
         document.addEventListener('keydown', this.handleKeydown.bind(this));
 
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', this.handleOutsideClick.bind(this));
+
         // Scroll handler
         window.addEventListener('scroll', this.handleScroll.bind(this));
 
@@ -81,6 +84,9 @@ class FilterNestApp {
                 const targetId = link.getAttribute('href').substring(1);
                 this.scrollToSection(targetId);
                 this.updateActiveNavLink(targetId);
+
+                // Close mobile menu when clicking a link
+                this.closeMobileMenu();
             });
         });
 
@@ -119,8 +125,18 @@ class FilterNestApp {
         const mobileToggle = document.getElementById('mobileToggle');
 
         if (navMenu) {
-            navMenu.classList.toggle('mobile-active');
+            navMenu.classList.toggle('active');
             mobileToggle?.classList.toggle('active');
+        }
+    }
+
+    closeMobileMenu() {
+        const navMenu = document.getElementById('nav-menu');
+        const mobileToggle = document.getElementById('mobileToggle');
+
+        if (navMenu) {
+            navMenu.classList.remove('active');
+            mobileToggle?.classList.remove('active');
         }
     }
 
@@ -731,6 +747,22 @@ class FilterNestApp {
                 activeModal.classList.remove('active');
                 document.body.style.overflow = '';
             }
+
+            // Also close mobile menu on Escape
+            this.closeMobileMenu();
+        }
+    }
+
+    handleOutsideClick(e) {
+        const navMenu = document.getElementById('nav-menu');
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navbar = document.getElementById('navbar');
+
+        // Check if mobile menu is open and click is outside navbar
+        if (navMenu && navMenu.classList.contains('active')) {
+            if (!navbar.contains(e.target)) {
+                this.closeMobileMenu();
+            }
         }
     }
 
@@ -825,6 +857,11 @@ class FilterNestApp {
     handleResize() {
         // Handle responsive updates
         this.initializeBrandsSlider();
+
+        // Close mobile menu on desktop resize
+        if (window.innerWidth >= 768) {
+            this.closeMobileMenu();
+        }
     }
 
     // Animation and Effects
