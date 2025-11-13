@@ -1,4 +1,4 @@
-// Filter Nest - Main Application JavaScript
+// Gulf Union Ozone Trading Co. - Main Application JavaScript
 
 class FilterNestApp {
     constructor() {
@@ -1091,3 +1091,142 @@ const toastStyles = `
 const styleSheet = document.createElement('style');
 styleSheet.textContent = toastStyles;
 document.head.appendChild(styleSheet);
+
+// Category Management
+class CategoryManager {
+    constructor() {
+        this.categoriesPerPage = 24;
+        this.currentPage = 1;
+        this.currentFilter = 'all';
+        this.searchTerm = '';
+        this.categories = [];
+    }
+
+    init() {
+        this.loadCategories();
+        this.initializeEventListeners();
+    }
+
+    initializeEventListeners() {
+        // Category search
+        document.getElementById('categorySearchInput')?.addEventListener('input', (e) => {
+            this.searchTerm = e.target.value.toLowerCase();
+            this.currentPage = 1;
+            this.renderCategories();
+        });
+
+        // Category filters
+        document.querySelectorAll('.category-filter').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.category-filter').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                this.currentFilter = e.target.dataset.filter;
+                this.currentPage = 1;
+                this.renderCategories();
+            });
+        });
+
+        // Load more button
+        document.getElementById('loadMoreCategories')?.addEventListener('click', () => {
+            this.currentPage++;
+            this.renderCategories(true);
+        });
+    }
+
+    loadCategories() {
+        if (typeof window.CATEGORIES_DATA !== 'undefined') {
+            this.categories = window.CATEGORIES_DATA;
+            this.renderCategories();
+        } else {
+            console.warn('Categories data not loaded');
+        }
+    }
+
+    filterCategories() {
+        let filtered = [...this.categories];
+
+        // Apply search filter
+        if (this.searchTerm) {
+            filtered = filtered.filter(category =>
+                category.name.toLowerCase().includes(this.searchTerm) ||
+                category.description.toLowerCase().includes(this.searchTerm)
+            );
+        }
+
+        // Apply category filter
+        if (this.currentFilter !== 'all') {
+            filtered = filtered.filter(category =>
+                category.tags && category.tags.includes(this.currentFilter)
+            );
+        }
+
+        return filtered;
+    }
+
+    renderCategories(append = false) {
+        const grid = document.getElementById('categoriesGrid');
+        const filtered = this.filterCategories();
+        const startIndex = (this.currentPage - 1) * this.categoriesPerPage;
+        const endIndex = startIndex + this.categoriesPerPage;
+        const pageCategories = filtered.slice(startIndex, endIndex);
+
+        if (!append) {
+            grid.innerHTML = '';
+        }
+
+        pageCategories.forEach(category => {
+            const categoryCard = this.createCategoryCard(category);
+            grid.appendChild(categoryCard);
+        });
+
+        this.updateCategoriesCount(filtered.length, Math.min(endIndex, filtered.length));
+        this.updateLoadMoreButton(filtered.length > endIndex);
+    }
+
+    createCategoryCard(category) {
+        const card = document.createElement('div');
+        card.className = 'category-card';
+        card.setAttribute('data-category', category.id);
+
+        card.innerHTML = `
+            <div class="category-image">
+                <img src="${category.image}" alt="${category.name}" />
+                <div class="category-overlay">
+                    <span class="product-count">${category.productCount || 0} Items</span>
+                </div>
+            </div>
+            <div class="category-content">
+                <h3 class="category-title">${category.name}</h3>
+                <p class="category-description">${category.description}</p>
+                <div class="category-brands">
+                    ${category.tags ? category.tags.map(tag => `<span class="brand-tag">${tag}</span>`).join('') : ''}
+                </div>
+                <button class="category-btn" onclick="window.location.href='products.html?category=${category.id}'">
+                    <span>Explore ${category.name}</span>
+                    <i class="icon-arrow-right"></i>
+                </button>
+            </div>
+        `;
+
+        return card;
+    }
+
+    updateCategoriesCount(total, shown) {
+        document.getElementById('categoriesTotal').textContent = total;
+        document.getElementById('categoriesShown').textContent = shown;
+    }
+
+    updateLoadMoreButton(hasMore) {
+        const button = document.getElementById('loadMoreCategories');
+        if (button) {
+            button.style.display = hasMore ? 'flex' : 'none';
+        }
+    }
+}
+
+// Initialize app when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    window.app = new FilterNestApp();
+    window.categoryManager = new CategoryManager();
+    window.categoryManager.init();
+});

@@ -1,4 +1,4 @@
-// Filter Nest - Search and Filtering System
+// Gulf Union Ozone Trading Co. - Search and Filtering System
 
 class SearchFilter {
     constructor() {

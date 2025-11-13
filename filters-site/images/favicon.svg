@@ -1,40 +1,38 @@
 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="favGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6C200;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="favAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#EA580C;stop-opacity:1" />
+    <linearGradient id="silverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8E8E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0C0C0;stop-opacity:1" />
     </linearGradient>
   </defs>
   
-  <!-- Background -->
-  <rect width="32" height="32" rx="6" fill="url(#favGradient)"/>
+  <!-- Background Circle -->
+  <circle cx="16" cy="16" r="14" fill="url(#favGradient)" stroke="#1C1C1C" stroke-width="1"/>
   
-  <!-- Filter Icon -->
-  <g transform="translate(6, 6)">
-    <!-- Hexagonal frame -->
-    <polygon points="10,2 16,6 16,14 10,18 4,14 4,6" 
-             fill="none" 
-             stroke="white" 
-             stroke-width="1.5"/>
-    
-    <!-- Filter pleats -->
-    <g stroke="white" stroke-width="1" opacity="0.8">
-      <line x1="7" y1="7" x2="7" y2="13"/>
-      <line x1="9" y1="7" x2="9" y2="13"/>
-      <line x1="11" y1="7" x2="11" y2="13"/>
-      <line x1="13" y1="7" x2="13" y2="13"/>
+  <!-- Industrial Gear -->
+  <g transform="translate(16,16)">
+    <!-- Gear Teeth -->
+    <g fill="#1C1C1C">
+      <polygon points="0,-12 2,-10 -2,-10" transform="rotate(0)"/>
+      <polygon points="0,-12 2,-10 -2,-10" transform="rotate(60)"/>
+      <polygon points="0,-12 2,-10 -2,-10" transform="rotate(120)"/>
+      <polygon points="0,-12 2,-10 -2,-10" transform="rotate(180)"/>
+      <polygon points="0,-12 2,-10 -2,-10" transform="rotate(240)"/>
+      <polygon points="0,-12 2,-10 -2,-10" transform="rotate(300)"/>
     </g>
     
-    <!-- Filter caps -->
-    <ellipse cx="10" cy="6" rx="3" ry="1" fill="white"/>
-    <ellipse cx="10" cy="14" rx="3" ry="1" fill="white"/>
+    <!-- Middle Ring -->
+    <circle r="9" fill="url(#silverGradient)" stroke="#1C1C1C" stroke-width="0.5"/>
     
-    <!-- Accent gear -->
-    <circle cx="16" cy="12" r="3" fill="url(#favAccent)" opacity="0.9"/>
-    <circle cx="16" cy="12" r="1.5" fill="white"/>
+    <!-- Inner Circle -->
+    <circle r="6" fill="#FFD700" stroke="#1C1C1C" stroke-width="0.5"/>
+    
+    <!-- Center Hub -->
+    <circle r="3" fill="#1C1C1C"/>
+    <circle r="1.5" fill="#FFD700"/>
   </g>
 </svg>

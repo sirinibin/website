@@ -1,4 +1,4 @@
-// Filter Nest - Quotation Management System
+// Gulf Union Ozone Trading Co. - Quotation Management System
 
 class QuotationManager {
     constructor() {
@@ -143,7 +143,7 @@ class QuotationManager {
         const quotation = this.getQuotation(quotationId);
         if (!quotation) return '';
 
-        let text = `FILTER NEST - QUOTATION REQUEST\n`;
+        let text = `GULF UNION OZONE TRADING CO. - QUOTATION REQUEST\n`;
         text += `================================================\n\n`;
 
         text += `QUOTATION DETAILS:\n`;
@@ -198,7 +198,7 @@ class QuotationManager {
         }
 
         text += `================================================\n`;
-        text += `Filter Nest - Industrial Filter Solutions\n`;
+        text += `Gulf Union Ozone Trading Co. - Industrial Supplies\n`;
         text += `Contact: info@filternest.sa | +966 XX XXX XXXX\n`;
 
         return text;

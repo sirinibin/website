@@ -1,4 +1,4 @@
-// Filter Nest - Basket Management System
+// Gulf Union Ozone Trading Co. - Basket Management System
 
 class BasketManager {
     constructor() {
