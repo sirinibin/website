@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tools & Equipment - Gulf Union Ozone</title>
+    <meta
+      name="description"
+      content="Professional tools and equipment for industrial applications. Power tools, hand tools, pneumatic equipment, and precision instruments from leading manufacturers."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/category.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-content">
+            <div class="logo">
+              <div class="logo-icon">
+                <div class="logo-symbol">
+                  <div class="logo-gear">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="logo-spark"></div>
+                  <div class="logo-accent"></div>
+                </div>
+              </div>
+              <div class="logo-text-container">
+                <span class="logo-text">Gulf Union</span>
+                <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+              </div>
+            </div>
+
+            <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+              <button class="btn-primary" onclick="scrollToContact()">
+                Get Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-content">
+          <nav class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="index.html#products">Products</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Tools & Equipment</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+      <div class="category-hero-background">
+        <img
+          src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+          alt="Tools & Equipment"
+        />
+      </div>
+      <div class="category-hero-overlay"></div>
+      <div class="container">
+        <div class="category-hero-content">
+          <div class="category-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h1 class="category-title">Tools & Equipment</h1>
+          <p class="category-description">
+            Professional-grade tools and equipment for industrial, commercial,
+            and professional applications. From power tools to precision
+            instruments, we provide the tools that professionals trust.
+          </p>
+          <div class="category-stats">
+            <div class="stat-item" style="--item-index: 0">
+              <div class="stat-number">1200+</div>
+              <div class="stat-label">Tools Available</div>
+            </div>
+            <div class="stat-item" style="--item-index: 1">
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Brands</div>
+            </div>
+            <div class="stat-item" style="--item-index: 2">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item" style="--item-index: 3">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Overview -->
+    <section class="category-overview">
+      <div class="container">
+        <div class="overview-content">
+          <div class="overview-text">
+            <h2>Professional Tool Solutions</h2>
+            <p>
+              Our tools and equipment division offers a comprehensive range of
+              professional-grade tools for various industries. We partner with
+              leading manufacturers to provide tools that deliver precision,
+              durability, and reliability for the most demanding applications.
+            </p>
+
+            <div class="overview-features">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-award"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Professional Grade</h3>
+                  <p>
+                    Heavy-duty tools designed for continuous professional use
+                    and demanding applications.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-wrench"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Expert Service</h3>
+                  <p>
+                    Tool repair, maintenance, and calibration services by
+                    certified technicians.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Training Programs</h3>
+                  <p>
+                    Comprehensive training programs on proper tool usage and
+                    safety procedures.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview-image">
+            <img
+              src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+              alt="Professional Tools"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Products -->
+    <section id="products" class="category-products">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Tools & Equipment</h2>
+          <p class="section-description">
+            Explore our comprehensive range of professional tools and equipment
+          </p>
+        </div>
+
+        <div class="products-filter">
+          <button class="filter-btn active" data-filter="all">All Tools</button>
+          <button class="filter-btn" data-filter="power">Power Tools</button>
+          <button class="filter-btn" data-filter="hand">Hand Tools</button>
+          <button class="filter-btn" data-filter="pneumatic">Pneumatic</button>
+          <button class="filter-btn" data-filter="measuring">Measuring</button>
+          <button class="filter-btn" data-filter="cutting">
+            Cutting Tools
+          </button>
+        </div>
+
+        <div class="products-grid">
+          <!-- Power Tools -->
+          <div class="product-item" data-category="power">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Electric Drill"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Electric Drills</h3>
+              <p class="product-description">
+                High-performance electric drills with variable speed control and
+                multiple torque settings.
+              </p>
+              <div class="product-specs">
+                <span class="spec">18V Lithium</span>
+                <span class="spec">Variable Speed</span>
+                <span class="spec">LED Light</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="power">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Angle Grinder"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Angle Grinders</h3>
+              <p class="product-description">
+                Professional angle grinders for cutting, grinding, and polishing
+                applications.
+              </p>
+              <div class="product-specs">
+                <span class="spec">9000 RPM</span>
+                <span class="spec">Safety Switch</span>
+                <span class="spec">Dust Sealed</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hand Tools -->
+          <div class="product-item" data-category="hand">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Socket Set"
+              />
+              <div class="product-badge new">New</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Socket Sets</h3>
+              <p class="product-description">
+                Comprehensive socket sets with ratchets and extensions for
+                automotive and mechanical work.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Chrome Vanadium</span>
+                <span class="spec">72-Tooth Ratchet</span>
+                <span class="spec">Lifetime Warranty</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="hand">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Wrench Set"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Wrench Sets</h3>
+              <p class="product-description">
+                Professional-grade combination and open-end wrench sets in
+                metric and standard sizes.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Forged Steel</span>
+                <span class="spec">Mirror Finish</span>
+                <span class="spec">15° Offset</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pneumatic Tools -->
+          <div class="product-item" data-category="pneumatic">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Air Compressor"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Air Compressors</h3>
+              <p class="product-description">
+                Industrial air compressors for powering pneumatic tools and
+                equipment.
+              </p>
+              <div class="product-specs">
+                <span class="spec">120 Gallon</span>
+                <span class="spec">Two Stage</span>
+                <span class="spec">Cast Iron Pump</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="pneumatic">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Pneumatic Tools"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pneumatic Tool Kits</h3>
+              <p class="product-description">
+                Complete pneumatic tool kits including impact wrenches, air
+                hammers, and accessories.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Impact Wrench</span>
+                <span class="spec">Air Hammer</span>
+                <span class="spec">Blow Gun</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Measuring Tools -->
+          <div class="product-item" data-category="measuring">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Digital Calipers"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Digital Calipers</h3>
+              <p class="product-description">
+                Precision digital calipers for accurate measurements in
+                manufacturing and machining.
+              </p>
+              <div class="product-specs">
+                <span class="spec">0.0005" Accuracy</span>
+                <span class="spec">Stainless Steel</span>
+                <span class="spec">Data Output</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="measuring">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Micrometers"
+              />
+              <div class="product-badge new">New</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Micrometers</h3>
+              <p class="product-description">
+                High-precision micrometers for critical dimensional measurements
+                and quality control.
+              </p>
+              <div class="product-specs">
+                <span class="spec">0-1" Range</span>
+                <span class="spec">Carbide Faces</span>
+                <span class="spec">Ratchet Stop</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cutting Tools -->
+          <div class="product-item" data-category="cutting">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Cutting Discs"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cutting Discs</h3>
+              <p class="product-description">
+                High-quality cutting discs for metal, masonry, and composite
+                materials.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Aluminum Oxide</span>
+                <span class="spec">Reinforced</span>
+                <span class="spec">Type 1</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="cutting">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/6f42c1/ffffff?text=Tools+Product"
+                alt="Drill Bits"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Drill Bit Sets</h3>
+              <p class="product-description">
+                Comprehensive drill bit sets for metal, wood, masonry, and
+                specialized applications.
+              </p>
+              <div class="product-specs">
+                <span class="spec">HSS Cobalt</span>
+                <span class="spec">Split Point</span>
+                <span class="spec">Index Case</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose Our Tools & Equipment?</h2>
+          <p class="section-description">
+            Professional-grade solutions for demanding applications
+          </p>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Professional Grade</h3>
+            <p>
+              Industrial-quality tools designed for continuous professional use
+              with superior durability and performance standards.
+            </p>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certified Quality</h3>
+            <p>
+              All tools meet international quality standards and safety
+              certifications for professional and industrial applications.
+            </p>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Service & Repair</h3>
+            <p>
+              Complete tool service, repair, and calibration services to keep
+              your equipment operating at peak performance.
+            </p>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Training Support</h3>
+            <p>
+              Comprehensive training programs on tool usage, safety procedures,
+              and maintenance best practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="contact-cta">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h2>Need Professional Tools?</h2>
+            <p>
+              Contact our tool specialists for expert recommendations and
+              competitive pricing on professional-grade tools and equipment.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn-primary">Request Quote</button>
+            <button class="btn-outline">Tool Catalog</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <div class="logo-icon">
+                <div class="logo-symbol">
+                  <div class="logo-gear">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="logo-spark"></div>
+                  <div class="logo-accent"></div>
+                </div>
+              </div>
+              <div class="logo-text-container">
+                <span class="logo-text">Gulf Union</span>
+                <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+              </div>
+            </div>
+            <p>
+              Leading provider of professional tools and industrial solutions
+              for over 15 years.
+            </p>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +966 11 123 4567</p>
+              <p><i class="fas fa-envelope"></i> info@gulfunionozone.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="welding.html">Welding Equipment</a></li>
+              <li><a href="electrical.html">Electrical Equipment</a></li>
+              <li><a href="automotive.html">Automotive Parts</a></li>
+              <li><a href="tools.html">Tools & Equipment</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Tool Repair</a></li>
+              <li><a href="#">Calibration</a></li>
+              <li><a href="#">Technical Training</a></li>
+              <li><a href="#">Equipment Rental</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Gulf Union Ozone. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modern.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>

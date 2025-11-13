@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plumbing & Fittings - Professional Industrial Solutions</title>
+    <meta
+      name="description"
+      content="Professional plumbing fittings, pipes, hoses, valves, and water systems for industrial applications. Quality grooved fittings, couplers, and plumbing accessories."
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/category.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <div class="logo-symbol">
+                <div class="logo-gear">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="logo-spark"></div>
+                <div class="logo-accent"></div>
+              </div>
+            </div>
+            <div class="logo-text-container">
+              <span class="logo-text">Gulf Union</span>
+              <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item"></li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link active">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="btn-secondary" onclick="scrollToContact()">
+              Get Quote
+            </button>
+            <button class="btn-primary" onclick="scrollToContact()">
+              Contact Us
+            </button>
+          </div>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <span class="separator">></span>
+        <a href="products.html">Products</a>
+        <span class="separator">></span>
+        <span class="current">Plumbing & Fittings</span>
+      </div>
+    </div>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Plumbing & Fittings</h1>
+            <p class="hero-description">
+              Comprehensive range of professional plumbing fittings, pipes,
+              hoses, valves, and water systems for industrial and commercial
+              applications. Quality components built for durability and
+              performance.
+            </p>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">Products</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Categories</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Support</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+              alt="Professional Plumbing Fittings"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Plumbing Products</h2>
+          <p class="section-description">
+            Professional-grade plumbing components and fittings
+          </p>
+        </div>
+
+        <!-- Product Filter -->
+        <div class="product-filter">
+          <button class="filter-btn active" data-filter="all">
+            All Products
+          </button>
+          <button class="filter-btn" data-filter="fittings">Fittings</button>
+          <button class="filter-btn" data-filter="pipes">Pipes</button>
+          <button class="filter-btn" data-filter="hoses">Hoses</button>
+          <button class="filter-btn" data-filter="valves">Valves</button>
+          <button class="filter-btn" data-filter="accessories">
+            Accessories
+          </button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+          <!-- Grooved Fittings -->
+          <div class="product-item" data-category="fittings">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Grooved Fittings"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Grooved Fittings</h3>
+              <p class="product-description">
+                High-quality grooved fittings for reliable pipe connections in
+                various sizes and materials.
+              </p>
+              <div class="product-features">
+                <span class="feature">Corrosion Resistant</span>
+                <span class="feature">Easy Installation</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Grooved Fittings')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Pipe Fittings -->
+          <div class="product-item" data-category="fittings">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Pipe Fittings"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pipe Fittings</h3>
+              <p class="product-description">
+                Complete range of pipe fittings including elbows, tees,
+                reducers, and couplers.
+              </p>
+              <div class="product-features">
+                <span class="feature">Multiple Sizes</span>
+                <span class="feature">Durable Materials</span>
+              </div>
+              <button class="quote-btn" onclick="requestQuote('Pipe Fittings')">
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Tees & Reducers -->
+          <div class="product-item" data-category="fittings">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Tees and Reducers"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Tees & Reducers</h3>
+              <p class="product-description">
+                Professional tees, reducers, and junction fittings for complex
+                piping systems.
+              </p>
+              <div class="product-features">
+                <span class="feature">Precision Engineered</span>
+                <span class="feature">Leak-Proof Design</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Tees & Reducers')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Couplers -->
+          <div class="product-item" data-category="fittings">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Pipe Couplers"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pipe Couplers</h3>
+              <p class="product-description">
+                High-strength couplers for secure pipe connections and
+                extensions.
+              </p>
+              <div class="product-features">
+                <span class="feature">High Strength</span>
+                <span class="feature">Easy Maintenance</span>
+              </div>
+              <button class="quote-btn" onclick="requestQuote('Pipe Couplers')">
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Industrial Pipes -->
+          <div class="product-item" data-category="pipes">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Industrial Pipes"
+              />
+              <div class="product-badge">New</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Industrial Pipes</h3>
+              <p class="product-description">
+                Heavy-duty industrial pipes for water, gas, and chemical
+                applications.
+              </p>
+              <div class="product-features">
+                <span class="feature">Chemical Resistant</span>
+                <span class="feature">High Pressure Rating</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Industrial Pipes')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Charging Hoses -->
+          <div class="product-item" data-category="hoses">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Charging Hoses"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Charging Hoses</h3>
+              <p class="product-description">
+                Professional charging hoses for HVAC and refrigeration systems.
+              </p>
+              <div class="product-features">
+                <span class="feature">Temperature Resistant</span>
+                <span class="feature">Flexible Design</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Charging Hoses')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Flat Hoses -->
+          <div class="product-item" data-category="hoses">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Flat Hoses"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Flat Hoses</h3>
+              <p class="product-description">
+                Durable flat hoses for irrigation, construction, and industrial
+                water applications.
+              </p>
+              <div class="product-features">
+                <span class="feature">Lightweight</span>
+                <span class="feature">Easy Storage</span>
+              </div>
+              <button class="quote-btn" onclick="requestQuote('Flat Hoses')">
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Green Hoses -->
+          <div class="product-item" data-category="hoses">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Green Garden Hoses"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Green Hoses</h3>
+              <p class="product-description">
+                Heavy-duty green hoses for garden, landscape, and outdoor
+                applications.
+              </p>
+              <div class="product-features">
+                <span class="feature">UV Resistant</span>
+                <span class="feature">Kink Resistant</span>
+              </div>
+              <button class="quote-btn" onclick="requestQuote('Green Hoses')">
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Foot Valves -->
+          <div class="product-item" data-category="valves">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Foot Valves"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Foot Valves</h3>
+              <p class="product-description">
+                Reliable foot valves for pump suction lines and water systems.
+              </p>
+              <div class="product-features">
+                <span class="feature">Check Valve Function</span>
+                <span class="feature">Strainer Included</span>
+              </div>
+              <button class="quote-btn" onclick="requestQuote('Foot Valves')">
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Water Guns -->
+          <div class="product-item" data-category="accessories">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Water Guns"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Water Guns</h3>
+              <p class="product-description">
+                Professional water guns and spray nozzles for cleaning and
+                irrigation.
+              </p>
+              <div class="product-features">
+                <span class="feature">Adjustable Spray</span>
+                <span class="feature">Ergonomic Design</span>
+              </div>
+              <button class="quote-btn" onclick="requestQuote('Water Guns')">
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Plumbing Accessories -->
+          <div class="product-item" data-category="accessories">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Plumbing Accessories"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Plumbing Accessories</h3>
+              <p class="product-description">
+                Complete range of plumbing accessories, adapters, and connection
+                hardware.
+              </p>
+              <div class="product-features">
+                <span class="feature">Universal Compatibility</span>
+                <span class="feature">Corrosion Resistant</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Plumbing Accessories')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Water Systems -->
+          <div class="product-item" data-category="accessories">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/20c997/ffffff?text=Plumbing+Product"
+                alt="Water Systems"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Water Systems</h3>
+              <p class="product-description">
+                Complete water system solutions including pumps, tanks, and
+                distribution components.
+              </p>
+              <div class="product-features">
+                <span class="feature">Complete Solutions</span>
+                <span class="feature">Professional Installation</span>
+              </div>
+              <button class="quote-btn" onclick="requestQuote('Water Systems')">
+                Request Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages-section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Our Plumbing Solutions</h2>
+        <div class="advantages-grid">
+          <div class="advantage-item">
+            <div class="advantage-icon">🔧</div>
+            <h3>Professional Grade</h3>
+            <p>
+              All our plumbing fittings meet industrial standards for
+              professional applications and long-term reliability.
+            </p>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">💧</div>
+            <h3>Leak-Proof Design</h3>
+            <p>
+              Precision-engineered fittings ensure secure connections and
+              leak-proof performance in all applications.
+            </p>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">⚡</div>
+            <h3>Quick Installation</h3>
+            <p>
+              User-friendly designs allow for fast, efficient installation
+              reducing labor time and costs.
+            </p>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">🛡️</div>
+            <h3>Corrosion Resistant</h3>
+            <p>
+              High-quality materials and coatings provide excellent resistance
+              to corrosion and environmental factors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Need Custom Plumbing Solutions?</h2>
+          <p>
+            Our experts can help you find the right plumbing fittings and
+            components for your specific project requirements.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn-primary" onclick="scrollToContact()">
+              Get Quote
+            </button>
+            <button
+              class="btn-secondary"
+              onclick="window.location.href='contact.html'"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Modal -->
+    <div id="whatsappQuoteModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Request Quote</h2>
+        <form id="quoteForm">
+          <input type="hidden" id="productName" name="product" />
+          <div class="form-group">
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="customerEmail">Email:</label>
+            <input type="email" id="customerEmail" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="customerPhone">Phone:</label>
+            <input type="tel" id="customerPhone" name="phone" />
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" />
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Requirements:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/modern.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>

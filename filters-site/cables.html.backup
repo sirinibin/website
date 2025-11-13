@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cables & Wiring - Gulf Union Ozone Industrial Solutions</title>
+
+    <!-- Meta Tags -->
+    <meta
+      name="description"
+      content="High-quality cables, cable assemblies, and electrical wiring solutions in Saudi Arabia. Industrial grade cables and wiring systems from Gulf Union Ozone Industrial Solutions."
+    />
+    <meta
+      name="keywords"
+      content="cables saudi arabia, electrical wiring, cable assemblies, industrial cables, power cables, control cables, gulf union ozone"
+    />
+    <meta name="author" content="Gulf Union Ozone Industrial Solutions" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Cables & Wiring - Gulf Union Ozone Industrial Solutions"
+    />
+    <meta
+      property="og:description"
+      content="High-quality cables, cable assemblies, and electrical wiring solutions in Saudi Arabia"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gulfunionozone.com/cables" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/category.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div
+            class="logo"
+            onclick="window.location.href='index.html'"
+            style="cursor: pointer"
+          >
+            <div class="logo-icon">
+              <div class="logo-symbol">
+                <div class="logo-gear">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="logo-spark"></div>
+                <div class="logo-accent"></div>
+              </div>
+            </div>
+            <div
+              class="logo-text-container"
+              onclick="window.location.href='index.html'"
+              style="cursor: pointer"
+            >
+              <span class="logo-text">Gulf Union Ozone</span>
+              <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#branches" class="nav-link">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#products" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="btn-secondary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i>
+              Get Quote
+            </button>
+            <button class="btn-primary" onclick="scrollToContact()">
+              Contact Us
+            </button>
+          </div>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <nav class="breadcrumb-nav">
+          <a href="index.html" class="breadcrumb-link">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+          <i class="fas fa-chevron-right"></i>
+          <a href="index.html#products" class="breadcrumb-link">Products</a>
+          <i class="fas fa-chevron-right"></i>
+          <span class="breadcrumb-current">Cables & Wiring</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+      <div class="hero-background">
+        <img
+          src="https://placehold.co/300x200/28a745/ffffff?text=Cables+Product"
+          alt="Cables & Wiring"
+          class="hero-image"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="category-badge">
+            <i class="fas fa-plug"></i>
+            Cables & Wiring
+          </div>
+          <h1 class="hero-title">
+            High-Quality Cables & Electrical Wiring Solutions
+          </h1>
+          <p class="hero-description">
+            Comprehensive range of cables, cable assemblies, and electrical
+            wiring solutions for industrial applications across Saudi Arabia.
+            From power cables to specialized control wiring systems.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">Cable Types</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Brands Available</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Support</div>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <button class="btn-primary btn-large" onclick="openWhatsAppQuoteModal()">
+              <i class="fas fa-shopping-cart"></i>
+              Get Quote
+            </button>
+            <button class="btn-outline btn-large" onclick="scrollToProducts()">
+              <i class="fas fa-th-large"></i>
+              View Products
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Description -->
+    <section class="category-description">
+      <div class="container">
+        <div class="description-content">
+          <div class="description-text">
+            <h2>Complete Cable & Wiring Solutions</h2>
+            <p>
+              Our cables and wiring division provides comprehensive electrical
+              connectivity solutions for industrial, commercial, and specialized
+              applications. We stock a wide range of cables from leading
+              manufacturers, ensuring you have access to the right cable for
+              every application.
+            </p>
+            <p>
+              From standard power cables to specialized control and
+              instrumentation wiring, our extensive inventory covers all your
+              electrical connectivity needs. All cables meet international
+              standards and are suitable for Saudi Arabia's demanding industrial
+              environments.
+            </p>
+          </div>
+          <div class="description-features">
+            <div class="feature-grid">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Power Cables</h4>
+                  <p>High voltage and low voltage power transmission</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Control Cables</h4>
+                  <p>Instrumentation and control system wiring</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Armored Cables</h4>
+                  <p>Protected cables for harsh environments</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Custom Assemblies</h4>
+                  <p>Custom cable assemblies and harnesses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Cables & Wiring Products</h2>
+          <p class="section-description">
+            Explore our comprehensive range of cables and electrical wiring
+            solutions
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Power Cables -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/28a745/ffffff?text=Cables+Product"
+                alt="Power Cables"
+                loading="lazy"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Power Cables</h3>
+              <p class="product-description">
+                High and low voltage power cables for industrial and commercial
+                applications
+              </p>
+              <div class="product-features">
+                <span class="feature">XLPE Insulated</span>
+                <span class="feature">Copper/Aluminum</span>
+                <span class="feature">Multi-Core</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Control Cables -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/28a745/ffffff?text=Cables+Product"
+                alt="Control Cables"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Control & Instrumentation Cables</h3>
+              <p class="product-description">
+                Specialized cables for control systems, instrumentation, and
+                automation
+              </p>
+              <div class="product-features">
+                <span class="feature">Shielded Design</span>
+                <span class="feature">Multi-Pair</span>
+                <span class="feature">Low Noise</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Armored Cables -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/28a745/ffffff?text=Cables+Product"
+                alt="Armored Cables"
+                loading="lazy"
+              />
+              <div class="product-badge">Heavy Duty</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Armored & Protected Cables</h3>
+              <p class="product-description">
+                Heavy-duty armored cables for harsh industrial environments and
+                outdoor installations
+              </p>
+              <div class="product-features">
+                <span class="feature">Steel Wire Armor</span>
+                <span class="feature">Weather Resistant</span>
+                <span class="feature">Rodent Proof</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flexible Cables -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/28a745/ffffff?text=Cables+Product"
+                alt="Flexible Cables"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Flexible & Portable Cables</h3>
+              <p class="product-description">
+                Highly flexible cables for portable equipment, robotics, and
+                moving applications
+              </p>
+              <div class="product-features">
+                <span class="feature">High Flexibility</span>
+                <span class="feature">Oil Resistant</span>
+                <span class="feature">Moving Applications</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Communication Cables -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/28a745/ffffff?text=Cables+Product"
+                alt="Communication Cables"
+                loading="lazy"
+              />
+              <div class="product-badge">New</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Communication & Data Cables</h3>
+              <p class="product-description">
+                Network cables, fiber optics, and communication cables for data
+                transmission
+              </p>
+              <div class="product-features">
+                <span class="feature">Cat6/Cat6A</span>
+                <span class="feature">Fiber Optic</span>
+                <span class="feature">High Speed</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cable Assemblies -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/28a745/ffffff?text=Cables+Product"
+                alt="Cable Assemblies"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Custom Cable Assemblies</h3>
+              <p class="product-description">
+                Customized cable assemblies, harnesses, and pre-terminated
+                solutions
+              </p>
+              <div class="product-features">
+                <span class="feature">Custom Length</span>
+                <span class="feature">Pre-Terminated</span>
+                <span class="feature">Tested & Certified</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Quote Modal -->
+    <div id="whatsappQuoteModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Request a Quote</h3>
+          <span class="close" onclick="closeWhatsAppQuoteModal()">&times;</span>
+        </div>
+        <form id="quoteForm" onsubmit="submitQuote(event)">
+          <div class="form-group">
+            <label for="quoteName">Full Name *</label>
+            <input type="text" id="quoteName" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="quoteCompany">Company Name *</label>
+            <input type="text" id="quoteCompany" name="company" required />
+          </div>
+
+          <div class="form-group">
+            <label for="quoteMobile">Mobile Number *</label>
+            <input type="tel" id="quoteMobile" name="mobile" required />
+          </div>
+
+          <div class="form-group">
+            <label for="quoteFile">Attach File (Optional)</label>
+            <input
+              type="file"
+              id="quoteFile"
+              name="attachment"
+              accept=".pdf,.doc,.docx,.jpg,.png"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="quoteDescription">Describe Your Requirements *</label>
+            <textarea
+              id="quoteDescription"
+              name="description"
+              rows="4"
+              required
+              placeholder="Please describe the cables or wiring products you need a quote for..."
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button
+              type="button"
+              class="btn-outline"
+              onclick="closeWhatsAppQuoteModal()"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Send Quote Request
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/modern.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>

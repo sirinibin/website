@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <div style="padding: 20px; text-align: center">
+      <h1>Gulf Union Ozone PDF Generator</h1>
+      <p>This tool generates a PDF from your brochure HTML.</p>
+      <button
+        onclick="generatePDF()"
+        style="
+          padding: 15px 30px;
+          background: #007acc;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+        "
+      >
+        Generate PDF Brochure
+      </button>
+      <div id="status" style="margin-top: 20px; font-weight: bold"></div>
+    </div>
+
+    <script>
+      async function generatePDF() {
+        const statusDiv = document.getElementById("status");
+        statusDiv.textContent = "Fetching brochure content...";
+        statusDiv.style.color = "#007acc";
+
+        try {
+          // Fetch the brochure HTML
+          const response = await fetch("brochure.html");
+          const html = await response.text();
+
+          // Create a temporary iframe to render the brochure
+          const iframe = document.createElement("iframe");
+          iframe.style.position = "absolute";
+          iframe.style.top = "-9999px";
+          iframe.style.width = "210mm"; // A4 width
+          iframe.style.height = "297mm"; // A4 height
+          document.body.appendChild(iframe);
+
+          const iframeDoc =
+            iframe.contentDocument || iframe.contentWindow.document;
+          iframeDoc.open();
+          iframeDoc.write(html);
+          iframeDoc.close();
+
+          // Wait for content to load
+          await new Promise((resolve) => setTimeout(resolve, 2000));
+
+          statusDiv.textContent = "Generating PDF...";
+
+          // Use html2canvas to capture the content
+          const canvas = await html2canvas(iframeDoc.body, {
+            width: 794, // A4 width in pixels at 96 DPI
+            height: 1123, // A4 height in pixels at 96 DPI
+            scale: 2,
+            useCORS: true,
+            logging: false,
+          });
+
+          // Create PDF
+          const { jsPDF } = window.jspdf;
+          const pdf = new jsPDF("p", "mm", "a4");
+
+          const imgData = canvas.toDataURL("image/png");
+          const imgWidth = 210; // A4 width in mm
+          const pageHeight = 297; // A4 height in mm
+          const imgHeight = (canvas.height * imgWidth) / canvas.width;
+          let heightLeft = imgHeight;
+
+          let position = 0;
+
+          pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+          heightLeft -= pageHeight;
+
+          while (heightLeft >= 0) {
+            position = heightLeft - imgHeight;
+            pdf.addPage();
+            pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+            heightLeft -= pageHeight;
+          }
+
+          // Save the PDF
+          pdf.save("Gulf-Union-Ozone-Product-Catalog-2025.pdf");
+
+          statusDiv.textContent = "PDF generated successfully!";
+          statusDiv.style.color = "#28a745";
+
+          // Clean up
+          document.body.removeChild(iframe);
+        } catch (error) {
+          console.error("Error generating PDF:", error);
+          statusDiv.textContent = "Error generating PDF. Please try again.";
+          statusDiv.style.color = "#dc3545";
+        }
+      }
+    </script>
+  </body>
+</html>

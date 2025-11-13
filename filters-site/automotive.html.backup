@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automotive Parts - Gulf Union Ozone</title>
+    <meta
+      name="description"
+      content="Comprehensive automotive parts and components for vehicles. Brake systems, engine parts, lighting, and electrical components from trusted manufacturers."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/category.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-content">
+            <div class="logo">
+              <div class="logo-icon">
+                <div class="logo-symbol">
+                  <div class="logo-gear">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="logo-spark"></div>
+                  <div class="logo-accent"></div>
+                </div>
+              </div>
+              <div class="logo-text-container">
+                <span class="logo-text">Gulf Union</span>
+                <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+              </div>
+            </div>
+
+            <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+              <button class="btn-primary" onclick="scrollToContact()">
+                Get Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-content">
+          <nav class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="index.html#products">Products</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Automotive Parts</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+      <div class="category-hero-background">
+        <img
+          src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+          alt="Automotive Parts"
+        />
+      </div>
+      <div class="category-hero-overlay"></div>
+      <div class="container">
+        <div class="category-hero-content">
+          <div class="category-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h1 class="category-title">Automotive Parts</h1>
+          <p class="category-description">
+            Complete range of automotive parts and components for all vehicle
+            types. From brake systems to engine components, we provide
+            high-quality parts that ensure optimal vehicle performance and
+            safety.
+          </p>
+          <div class="category-stats">
+            <div class="stat-item" style="--item-index: 0">
+              <div class="stat-number">800+</div>
+              <div class="stat-label">Parts Available</div>
+            </div>
+            <div class="stat-item" style="--item-index: 1">
+              <div class="stat-number">30+</div>
+              <div class="stat-label">Vehicle Brands</div>
+            </div>
+            <div class="stat-item" style="--item-index: 2">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item" style="--item-index: 3">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Overview -->
+    <section class="category-overview">
+      <div class="container">
+        <div class="overview-content">
+          <div class="overview-text">
+            <h2>Quality Automotive Solutions</h2>
+            <p>
+              Our automotive parts division specializes in providing genuine and
+              aftermarket parts for a wide range of vehicles. We work with
+              trusted manufacturers to ensure every component meets strict
+              quality standards and delivers reliable performance.
+            </p>
+
+            <div class="overview-features">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>OEM Quality</h3>
+                  <p>
+                    Original equipment manufacturer quality parts with
+                    guaranteed compatibility.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-truck"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Fast Delivery</h3>
+                  <p>
+                    Quick delivery service across Saudi Arabia with extensive
+                    inventory.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Installation Support</h3>
+                  <p>
+                    Technical support and installation guidance from automotive
+                    experts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview-image">
+            <img
+              src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+              alt="Engine Components"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Products -->
+    <section id="products" class="category-products">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Automotive Parts</h2>
+          <p class="section-description">
+            Explore our comprehensive range of automotive components
+          </p>
+        </div>
+
+        <div class="products-filter">
+          <button class="filter-btn active" data-filter="all">All Parts</button>
+          <button class="filter-btn" data-filter="brakes">Brake Systems</button>
+          <button class="filter-btn" data-filter="engine">Engine Parts</button>
+          <button class="filter-btn" data-filter="lighting">Lighting</button>
+          <button class="filter-btn" data-filter="electrical">
+            Electrical
+          </button>
+          <button class="filter-btn" data-filter="suspension">
+            Suspension
+          </button>
+        </div>
+
+        <div class="products-grid">
+          <!-- Brake Systems -->
+          <div class="product-item" data-category="brakes">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="Brake Pads"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Premium Brake Pads</h3>
+              <p class="product-description">
+                High-performance brake pads for passenger cars with excellent
+                stopping power and durability.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Ceramic</span>
+                <span class="spec">Low Noise</span>
+                <span class="spec">Long Life</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="brakes">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="Brake Discs"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Brake Discs & Rotors</h3>
+              <p class="product-description">
+                Ventilated and solid brake discs for various vehicle
+                applications with superior heat dissipation.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Ventilated</span>
+                <span class="spec">Cast Iron</span>
+                <span class="spec">Balanced</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engine Parts -->
+          <div class="product-item" data-category="engine">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="Water Pumps"
+              />
+              <div class="product-badge new">New</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Water Pumps</h3>
+              <p class="product-description">
+                High-quality water pumps for efficient engine cooling with
+                durable impeller design.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Aluminum Housing</span>
+                <span class="spec">Sealed Bearing</span>
+                <span class="spec">OEM Fit</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="engine">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="Engine Filters"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Engine Filters</h3>
+              <p class="product-description">
+                Complete range of air, oil, and fuel filters for optimal engine
+                performance and protection.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Multi-layer</span>
+                <span class="spec">High Flow</span>
+                <span class="spec">Long Service</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lighting -->
+          <div class="product-item" data-category="lighting">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="LED Headlights"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">LED Headlights</h3>
+              <p class="product-description">
+                Advanced LED headlight systems with superior brightness and
+                energy efficiency.
+              </p>
+              <div class="product-specs">
+                <span class="spec">LED Technology</span>
+                <span class="spec">6000K White</span>
+                <span class="spec">Long Life</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="lighting">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="Tail Lights"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Tail Light Assemblies</h3>
+              <p class="product-description">
+                Complete tail light assemblies with integrated brake and turn
+                signal functions.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Multi-function</span>
+                <span class="spec">Weather Sealed</span>
+                <span class="spec">Easy Install</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Electrical -->
+          <div class="product-item" data-category="electrical">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="Alternators"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Alternators</h3>
+              <p class="product-description">
+                High-output alternators for reliable electrical system charging
+                and power supply.
+              </p>
+              <div class="product-specs">
+                <span class="spec">120A-200A</span>
+                <span class="spec">Remanufactured</span>
+                <span class="spec">Tested</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="electrical">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="Starters"
+              />
+              <div class="product-badge new">New</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Starter Motors</h3>
+              <p class="product-description">
+                Reliable starter motors with high torque output for dependable
+                engine starting.
+              </p>
+              <div class="product-specs">
+                <span class="spec">High Torque</span>
+                <span class="spec">Gear Reduction</span>
+                <span class="spec">Warranty</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Suspension -->
+          <div class="product-item" data-category="suspension">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="Shock Absorbers"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Shock Absorbers</h3>
+              <p class="product-description">
+                Premium shock absorbers for smooth ride quality and improved
+                vehicle handling.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Gas Charged</span>
+                <span class="spec">Twin Tube</span>
+                <span class="spec">All Weather</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="suspension">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/495057/ffffff?text=Automotive+Product"
+                alt="Springs"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Coil Springs</h3>
+              <p class="product-description">
+                Heavy-duty coil springs designed for optimal load capacity and
+                ride comfort.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Progressive Rate</span>
+                <span class="spec">Powder Coated</span>
+                <span class="spec">Load Rated</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose Our Automotive Parts?</h2>
+          <p class="section-description">
+            Superior quality and service that drives your success
+          </p>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>OEM Quality</h3>
+            <p>
+              All automotive parts meet or exceed original equipment
+              manufacturer specifications with rigorous quality testing.
+            </p>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>
+              Extensive inventory and efficient logistics ensure quick delivery
+              of automotive parts when you need them.
+            </p>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Technical Support</h3>
+            <p>
+              Expert technical assistance and installation guidance from our
+              experienced automotive specialists.
+            </p>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Quality Warranty</h3>
+            <p>
+              Comprehensive warranty coverage on all automotive parts with
+              reliable after-sales support service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="contact-cta">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h2>Need Automotive Parts?</h2>
+            <p>
+              Contact our automotive specialists for the right parts for your
+              vehicle. We provide expert recommendations and competitive
+              pricing.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn-primary">Request Quote</button>
+            <button class="btn-outline">Browse Catalog</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <div class="logo-icon">
+                <div class="logo-symbol">
+                  <div class="logo-gear">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="logo-spark"></div>
+                  <div class="logo-accent"></div>
+                </div>
+              </div>
+              <div class="logo-text-container">
+                <span class="logo-text">Gulf Union</span>
+                <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+              </div>
+            </div>
+            <p>
+              Leading provider of automotive parts and industrial solutions with
+              over 15 years of experience.
+            </p>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +966 11 123 4567</p>
+              <p><i class="fas fa-envelope"></i> info@gulfunionozone.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="welding.html">Welding Equipment</a></li>
+              <li><a href="electrical.html">Electrical Equipment</a></li>
+              <li><a href="automotive.html">Automotive Parts</a></li>
+              <li><a href="safety.html">Safety Equipment</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Installation</a></li>
+              <li><a href="#">Maintenance</a></li>
+              <li><a href="#">Technical Support</a></li>
+              <li><a href="#">Parts Supply</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Gulf Union Ozone. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modern.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>
