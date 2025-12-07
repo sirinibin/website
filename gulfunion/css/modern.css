@@ -1,3 +1,24 @@
+                    @media (max-width: 767px) {
+                        .hero {
+                            margin-top: 88px !important;
+                        }
+                    }
+                    @media (max-width: 600px) {
+                        .hero {
+                            margin-top: 88px !important;
+                        }
+                    }
+                    @media (min-width: 820px),
+                                 (min-width: 1024px),
+                                 (width: 912px) and (height: 1368px),
+                                 (width: 1024px) and (height: 1366px) {
+                        .hero-title {
+                            font-size: 2.25rem !important;
+                        }
+                        .hero-description {
+                            font-size: 1.25rem !important;
+                        }
+                    }
                     @media (min-width: 820px) {
                         .hero-title {
                             font-size: 2.25rem !important; /* Use large screen size */
@@ -586,6 +607,9 @@ body {
     font-size: var(--font-size-xs);
     font-weight: 500;
     margin-bottom: var(--space-2);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {
