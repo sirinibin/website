@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="45" fill="#f8f9fa" stroke="#007acc" stroke-width="2"/>
+  
+  <!-- Main Filter Body -->
+  <rect x="25" y="30" width="50" height="40" rx="4" fill="#007acc" opacity="0.8"/>
+  
+  <!-- Filter Media Lines -->
+  <line x1="30" y1="40" x2="70" y2="40" stroke="white" stroke-width="1.5"/>
+  <line x1="30" y1="45" x2="70" y2="45" stroke="white" stroke-width="1.5"/>
+  <line x1="30" y1="50" x2="70" y2="50" stroke="white" stroke-width="1.5"/>
+  <line x1="30" y1="55" x2="70" y2="55" stroke="white" stroke-width="1.5"/>
+  <line x1="30" y1="60" x2="70" y2="60" stroke="white" stroke-width="1.5"/>
+  
+  <!-- Transmission Gear Elements -->
+  <circle cx="40" cy="20" r="6" fill="#dc3545" stroke="white" stroke-width="1"/>
+  <circle cx="60" cy="20" r="6" fill="#dc3545" stroke="white" stroke-width="1"/>
+  <circle cx="40" cy="80" r="6" fill="#dc3545" stroke="white" stroke-width="1"/>
+  <circle cx="60" cy="80" r="6" fill="#dc3545" stroke="white" stroke-width="1"/>
+  
+  <!-- Gear Teeth -->
+  <path d="M34 20 L36 16 L44 16 L46 20" fill="#dc3545"/>
+  <path d="M54 20 L56 16 L64 16 L66 20" fill="#dc3545"/>
+  <path d="M34 80 L36 84 L44 84 L46 80" fill="#dc3545"/>
+  <path d="M54 80 L56 84 L64 84 L66 80" fill="#dc3545"/>
+  
+  <!-- Connection Lines -->
+  <line x1="40" y1="26" x2="40" y2="30" stroke="#666" stroke-width="2"/>
+  <line x1="60" y1="26" x2="60" y2="30" stroke="#666" stroke-width="2"/>
+  <line x1="40" y1="70" x2="40" y2="74" stroke="#666" stroke-width="2"/>
+  <line x1="60" y1="70" x2="60" y2="74" stroke="#666" stroke-width="2"/>
+  
+  <!-- Filter Label -->
+  <text x="50" y="90" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#007acc" font-weight="bold">TRANSMISSION</text>
+</svg>

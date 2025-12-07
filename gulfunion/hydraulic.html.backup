@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydraulic Systems - Professional Industrial Solutions</title>
+    <meta
+      name="description"
+      content="Professional hydraulic systems including steering oil, pressure plates, hydro systems, and hydraulic components for industrial machinery and automotive applications."
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/category.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div class="logo">
+            <div class="logo-icon">
+              <div class="logo-symbol">
+                <div class="logo-gear">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="logo-spark"></div>
+                <div class="logo-accent"></div>
+              </div>
+            </div>
+            <div class="logo-text-container">
+              <span class="logo-text">Gulf Union</span>
+              <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link active">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="btn-secondary" onclick="scrollToContact()">
+              Get Quote
+            </button>
+            <button class="btn-primary" onclick="scrollToContact()">
+              Contact Us
+            </button>
+          </div>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <span class="separator">></span>
+        <a href="products.html">Products</a>
+        <span class="separator">></span>
+        <span class="current">Hydraulic Systems</span>
+      </div>
+    </div>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Hydraulic Systems</h1>
+            <p class="hero-description">
+              Complete hydraulic solutions including steering oil, pressure
+              plates, hydro systems, and hydraulic components for industrial
+              machinery, construction equipment, and automotive applications.
+              Professional-grade systems built for power and precision.
+            </p>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">300+</span>
+                <span class="stat-label">Products</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Applications</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Support</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+              alt="Professional Hydraulic Systems"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Hydraulic Products</h2>
+          <p class="section-description">
+            Professional hydraulic systems and components
+          </p>
+        </div>
+
+        <!-- Product Filter -->
+        <div class="product-filter">
+          <button class="filter-btn active" data-filter="all">
+            All Products
+          </button>
+          <button class="filter-btn" data-filter="fluids">
+            Hydraulic Fluids
+          </button>
+          <button class="filter-btn" data-filter="components">
+            Components
+          </button>
+          <button class="filter-btn" data-filter="systems">
+            Complete Systems
+          </button>
+          <button class="filter-btn" data-filter="pumps">Pumps</button>
+          <button class="filter-btn" data-filter="cylinders">Cylinders</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+          <!-- Steering Oil -->
+          <div class="product-item" data-category="fluids">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Steering Oil"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Steering Oil</h3>
+              <p class="product-description">
+                High-quality power steering fluid for automotive and industrial
+                steering systems.
+              </p>
+              <div class="product-features">
+                <span class="feature">Temperature Stable</span>
+                <span class="feature">Anti-Foaming</span>
+              </div>
+              <button class="quote-btn" onclick="requestQuote('Steering Oil')">
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Pressure Plates -->
+          <div class="product-item" data-category="components">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Pressure Plates"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pressure Plates</h3>
+              <p class="product-description">
+                Heavy-duty pressure plates for hydraulic systems and clutch
+                applications.
+              </p>
+              <div class="product-features">
+                <span class="feature">High Pressure Rating</span>
+                <span class="feature">Durable Construction</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Pressure Plates')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydro Systems -->
+          <div class="product-item" data-category="systems">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydro Systems"
+              />
+              <div class="product-badge">Complete</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydro Systems</h3>
+              <p class="product-description">
+                Complete hydraulic systems for industrial machinery,
+                construction, and mobile equipment.
+              </p>
+              <div class="product-features">
+                <span class="feature">Complete Solutions</span>
+                <span class="feature">Custom Design</span>
+              </div>
+              <button class="quote-btn" onclick="requestQuote('Hydro Systems')">
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydraulic Pumps -->
+          <div class="product-item" data-category="pumps">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydraulic Pumps"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydraulic Pumps</h3>
+              <p class="product-description">
+                High-performance hydraulic pumps including gear, vane, and
+                piston pumps for various applications.
+              </p>
+              <div class="product-features">
+                <span class="feature">Variable Displacement</span>
+                <span class="feature">High Efficiency</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Hydraulic Pumps')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydraulic Cylinders -->
+          <div class="product-item" data-category="cylinders">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydraulic Cylinders"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydraulic Cylinders</h3>
+              <p class="product-description">
+                Heavy-duty hydraulic cylinders for lifting, pushing, and
+                positioning applications.
+              </p>
+              <div class="product-features">
+                <span class="feature">High Force Output</span>
+                <span class="feature">Precision Control</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Hydraulic Cylinders')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydraulic Valves -->
+          <div class="product-item" data-category="components">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydraulic Valves"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydraulic Valves</h3>
+              <p class="product-description">
+                Precision hydraulic valves including directional, pressure, and
+                flow control valves.
+              </p>
+              <div class="product-features">
+                <span class="feature">Precise Control</span>
+                <span class="feature">Leak-Free Design</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Hydraulic Valves')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydraulic Filters -->
+          <div class="product-item" data-category="components">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydraulic Filters"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydraulic Filters</h3>
+              <p class="product-description">
+                High-efficiency hydraulic filters to maintain system cleanliness
+                and component protection.
+              </p>
+              <div class="product-features">
+                <span class="feature">High Filtration</span>
+                <span class="feature">Long Service Life</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Hydraulic Filters')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydraulic Hoses -->
+          <div class="product-item" data-category="components">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydraulic Hoses"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydraulic Hoses</h3>
+              <p class="product-description">
+                High-pressure hydraulic hoses and fittings for flexible
+                connections in hydraulic systems.
+              </p>
+              <div class="product-features">
+                <span class="feature">High Pressure Rating</span>
+                <span class="feature">Flexible Design</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Hydraulic Hoses')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydraulic Motors -->
+          <div class="product-item" data-category="systems">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydraulic Motors"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydraulic Motors</h3>
+              <p class="product-description">
+                High-torque hydraulic motors for driving various industrial and
+                mobile equipment.
+              </p>
+              <div class="product-features">
+                <span class="feature">High Torque</span>
+                <span class="feature">Variable Speed</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Hydraulic Motors')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydraulic Accumulators -->
+          <div class="product-item" data-category="components">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydraulic Accumulators"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydraulic Accumulators</h3>
+              <p class="product-description">
+                Energy storage devices for hydraulic systems to maintain
+                pressure and provide backup power.
+              </p>
+              <div class="product-features">
+                <span class="feature">Energy Storage</span>
+                <span class="feature">Pressure Maintenance</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Hydraulic Accumulators')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydraulic Reservoirs -->
+          <div class="product-item" data-category="systems">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydraulic Reservoirs"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydraulic Reservoirs</h3>
+              <p class="product-description">
+                Custom hydraulic reservoirs and tanks with cooling, filtration,
+                and monitoring systems.
+              </p>
+              <div class="product-features">
+                <span class="feature">Custom Design</span>
+                <span class="feature">Integrated Cooling</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Hydraulic Reservoirs')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Hydraulic Power Units -->
+          <div class="product-item" data-category="systems">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/e83e8c/ffffff?text=Hydraulic+Product"
+                alt="Hydraulic Power Units"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hydraulic Power Units</h3>
+              <p class="product-description">
+                Complete hydraulic power units with pump, motor, reservoir, and
+                control systems.
+              </p>
+              <div class="product-features">
+                <span class="feature">Complete Package</span>
+                <span class="feature">Ready to Install</span>
+              </div>
+              <button
+                class="quote-btn"
+                onclick="requestQuote('Hydraulic Power Units')"
+              >
+                Request Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages-section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Our Hydraulic Solutions</h2>
+        <div class="advantages-grid">
+          <div class="advantage-item">
+            <div class="advantage-icon">💪</div>
+            <h3>High Power Density</h3>
+            <p>
+              Our hydraulic systems deliver exceptional power-to-weight ratios
+              for maximum performance in compact designs.
+            </p>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">🎯</div>
+            <h3>Precision Control</h3>
+            <p>
+              Advanced hydraulic components provide precise positioning and
+              speed control for demanding applications.
+            </p>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">🔧</div>
+            <h3>Custom Solutions</h3>
+            <p>
+              Engineering expertise to design and build custom hydraulic systems
+              tailored to your specific requirements.
+            </p>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">🛡️</div>
+            <h3>Reliable Operation</h3>
+            <p>
+              Industrial-grade components ensure reliable operation in harsh
+              environments and demanding applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Need Custom Hydraulic Solutions?</h2>
+          <p>
+            Our hydraulic engineers can design and build complete systems
+            tailored to your specific application requirements.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn-primary" onclick="scrollToContact()">
+              Get Quote
+            </button>
+            <button
+              class="btn-secondary"
+              onclick="window.location.href='contact.html'"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Modal -->
+    <div id="whatsappQuoteModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Request Quote</h2>
+        <form id="quoteForm">
+          <input type="hidden" id="productName" name="product" />
+          <div class="form-group">
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="customerEmail">Email:</label>
+            <input type="email" id="customerEmail" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="customerPhone">Phone:</label>
+            <input type="tel" id="customerPhone" name="phone" />
+          </div>
+          <div class="form-group">
+            <label for="application">Application:</label>
+            <input
+              type="text"
+              id="application"
+              name="application"
+              placeholder="e.g., Construction equipment, Industrial machinery"
+            />
+          </div>
+          <div class="form-group">
+            <label for="pressure">Pressure Requirements:</label>
+            <input
+              type="text"
+              id="pressure"
+              name="pressure"
+              placeholder="e.g., 3000 PSI"
+            />
+          </div>
+          <div class="form-group">
+            <label for="flowRate">Flow Rate:</label>
+            <input
+              type="text"
+              id="flowRate"
+              name="flowRate"
+              placeholder="e.g., 20 GPM"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Requirements:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/modern.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>

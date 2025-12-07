@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabrication & Support - Gulf Union Ozone Industrial Solutions</title>
+
+    <!-- Meta Tags -->
+    <meta
+      name="description"
+      content="Professional fabrication and structural support solutions in Saudi Arabia. Steel work, custom fabrication, and support systems from Gulf Union Ozone Industrial Solutions."
+    />
+    <meta
+      name="keywords"
+      content="fabrication saudi arabia, steel work, structural support, custom fabrication, industrial fabrication, gulf union ozone"
+    />
+    <meta name="author" content="Gulf Union Ozone Industrial Solutions" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Fabrication & Support - Gulf Union Ozone Industrial Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Professional fabrication and structural support solutions in Saudi Arabia"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gulfunionozone.com/fabrication" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/category.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div
+            class="logo"
+            onclick="window.location.href='index.html'"
+            style="cursor: pointer"
+          >
+            <div class="logo-icon">
+              <div class="logo-symbol">
+                <div class="logo-gear">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <div class="logo-spark"></div>
+                <div class="logo-accent"></div>
+              </div>
+            </div>
+            <div
+              class="logo-text-container"
+              onclick="window.location.href='index.html'"
+              style="cursor: pointer"
+            >
+              <span class="logo-text">Gulf Union Ozone</span>
+              <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#branches" class="nav-link">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#products" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="btn-secondary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i>
+              Get Quote
+            </button>
+            <button class="btn-primary" onclick="scrollToContact()">
+              Contact Us
+            </button>
+          </div>
+        </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <nav class="breadcrumb-nav">
+          <a href="index.html" class="breadcrumb-link">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+          <i class="fas fa-chevron-right"></i>
+          <a href="index.html#products" class="breadcrumb-link">Products</a>
+          <i class="fas fa-chevron-right"></i>
+          <span class="breadcrumb-current">Fabrication & Support</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+      <div class="hero-background">
+        <img
+          src="https://placehold.co/300x200/007acc/ffffff?text=Fabrication+Product"
+          alt="Fabrication & Support"
+          class="hero-image"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="category-badge">
+            <i class="fas fa-tools"></i>
+            Fabrication & Support
+          </div>
+          <h1 class="hero-title">
+            Professional Fabrication & Structural Support Solutions
+          </h1>
+          <p class="hero-description">
+            Complete fabrication solutions with structural support systems for
+            industrial applications across Saudi Arabia. From custom steel work
+            to complex structural support installations.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Support</div>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <button class="btn-primary btn-large" onclick="openWhatsAppQuoteModal()">
+              <i class="fas fa-shopping-cart"></i>
+              Get Quote
+            </button>
+            <button class="btn-outline btn-large" onclick="scrollToProducts()">
+              <i class="fas fa-th-large"></i>
+              View Products
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Description -->
+    <section class="category-description">
+      <div class="container">
+        <div class="description-content">
+          <div class="description-text">
+            <h2>Complete Fabrication Solutions</h2>
+            <p>
+              Our fabrication and structural support division provides
+              comprehensive solutions for industrial and commercial projects. We
+              specialize in custom steel fabrication, structural support
+              systems, and precision metalwork designed to meet the demanding
+              requirements of Saudi Arabia's industrial sector.
+            </p>
+            <p>
+              From concept to completion, our experienced team delivers
+              high-quality fabrication services using advanced equipment and
+              proven techniques. Whether you need custom brackets, structural
+              supports, or complex assemblies, we ensure precision, durability,
+              and compliance with international standards.
+            </p>
+          </div>
+          <div class="description-features">
+            <div class="feature-grid">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-drafting-compass"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Custom Design</h4>
+                  <p>Tailored solutions for unique requirements</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-industry"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Industrial Grade</h4>
+                  <p>Heavy-duty materials and construction</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Quality Certified</h4>
+                  <p>ISO compliant fabrication processes</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Expert Installation</h4>
+                  <p>Professional installation and support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Fabrication & Support Products</h2>
+          <p class="section-description">
+            Explore our comprehensive range of fabrication and structural
+            support solutions
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Structural Steel -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/007acc/ffffff?text=Fabrication+Product"
+                alt="Structural Steel"
+                loading="lazy"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Structural Steel Fabrication</h3>
+              <p class="product-description">
+                Custom structural steel fabrication for buildings, platforms,
+                and industrial structures
+              </p>
+              <div class="product-features">
+                <span class="feature">I-Beams</span>
+                <span class="feature">H-Columns</span>
+                <span class="feature">Custom Frames</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Support Brackets -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/007acc/ffffff?text=Fabrication+Product"
+                alt="Support Brackets"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Support Brackets & Clamps</h3>
+              <p class="product-description">
+                Heavy-duty brackets and clamps for pipe, cable, and equipment
+                support
+              </p>
+              <div class="product-features">
+                <span class="feature">Pipe Brackets</span>
+                <span class="feature">Cable Clamps</span>
+                <span class="feature">Equipment Mounts</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Platform Systems -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/007acc/ffffff?text=Fabrication+Product"
+                alt="Platform Systems"
+                loading="lazy"
+              />
+              <div class="product-badge">New</div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Platform & Walkway Systems</h3>
+              <p class="product-description">
+                Modular platforms, walkways, and access systems for industrial
+                facilities
+              </p>
+              <div class="product-features">
+                <span class="feature">Modular Design</span>
+                <span class="feature">Safety Rails</span>
+                <span class="feature">Anti-Slip Surfaces</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Handrails & Barriers -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/007acc/ffffff?text=Fabrication+Product"
+                alt="Handrails & Barriers"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Handrails & Safety Barriers</h3>
+              <p class="product-description">
+                Safety handrails, barriers, and guardrail systems for workplace
+                protection
+              </p>
+              <div class="product-features">
+                <span class="feature">Safety Compliant</span>
+                <span class="feature">Corrosion Resistant</span>
+                <span class="feature">Easy Installation</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Assemblies -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/007acc/ffffff?text=Fabrication+Product"
+                alt="Custom Assemblies"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Custom Metal Assemblies</h3>
+              <p class="product-description">
+                Bespoke metal assemblies and fabricated components for
+                specialized applications
+              </p>
+              <div class="product-features">
+                <span class="feature">CAD Design</span>
+                <span class="feature">Precision Cutting</span>
+                <span class="feature">Quality Welding</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frame Systems -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/007acc/ffffff?text=Fabrication+Product"
+                alt="Frame Systems"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Industrial Frame Systems</h3>
+              <p class="product-description">
+                Robust frame systems for equipment mounting, enclosures, and
+                structural support
+              </p>
+              <div class="product-features">
+                <span class="feature">Equipment Frames</span>
+                <span class="feature">Enclosure Systems</span>
+                <span class="feature">Modular Construction</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-whatsapp" onclick="openWhatsAppQuoteModal()"><i class="fab fa-whatsapp"></i> 
+                  <i class="fas fa-cart-plus"></i>
+                  Get Quote
+                </button>
+                <button class="btn-outline">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Quote Modal -->
+    <div id="whatsappQuoteModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Request a Quote</h3>
+          <span class="close" onclick="closeWhatsAppQuoteModal()">&times;</span>
+        </div>
+        <form id="quoteForm" onsubmit="submitQuote(event)">
+          <div class="form-group">
+            <label for="quoteName">Full Name *</label>
+            <input type="text" id="quoteName" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="quoteCompany">Company Name *</label>
+            <input type="text" id="quoteCompany" name="company" required />
+          </div>
+
+          <div class="form-group">
+            <label for="quoteMobile">Mobile Number *</label>
+            <input type="tel" id="quoteMobile" name="mobile" required />
+          </div>
+
+          <div class="form-group">
+            <label for="quoteFile">Attach File (Optional)</label>
+            <input
+              type="file"
+              id="quoteFile"
+              name="attachment"
+              accept=".pdf,.doc,.docx,.jpg,.png"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="quoteDescription">Describe Your Requirements *</label>
+            <textarea
+              id="quoteDescription"
+              name="description"
+              rows="4"
+              required
+              placeholder="Please describe the fabrication or support products you need a quote for..."
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button
+              type="button"
+              class="btn-outline"
+              onclick="closeWhatsAppQuoteModal()"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Send Quote Request
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/modern.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>

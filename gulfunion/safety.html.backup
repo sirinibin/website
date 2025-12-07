@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safety Equipment - Gulf Union Ozone</title>
+    <meta
+      name="description"
+      content="Comprehensive safety equipment and protective gear for industrial applications. PPE, safety clothing, protective equipment, and safety systems from trusted manufacturers."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/category.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-content">
+            <div class="logo">
+              <div class="logo-icon">
+                <div class="logo-symbol">
+                  <div class="logo-gear">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="logo-spark"></div>
+                  <div class="logo-accent"></div>
+                </div>
+              </div>
+              <div class="logo-text-container">
+                <span class="logo-text">Gulf Union</span>
+                <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+              </div>
+            </div>
+
+            <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+              <button class="btn-primary" onclick="scrollToContact()">
+                Get Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-content">
+          <nav class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="index.html#products">Products</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Safety Equipment</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+      <div class="category-hero-background">
+        <img
+          src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+          alt="Safety Equipment"
+        />
+      </div>
+      <div class="category-hero-overlay"></div>
+      <div class="container">
+        <div class="category-hero-content">
+          <div class="category-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h1 class="category-title">Safety Equipment</h1>
+          <p class="category-description">
+            Comprehensive safety equipment and personal protective equipment
+            (PPE) to ensure worker safety in industrial environments. From hard
+            hats to safety harnesses, we provide the protection your workforce
+            needs.
+          </p>
+          <div class="category-stats">
+            <div class="stat-item" style="--item-index: 0">
+              <div class="stat-number">600+</div>
+              <div class="stat-label">Safety Products</div>
+            </div>
+            <div class="stat-item" style="--item-index: 1">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Safety Brands</div>
+            </div>
+            <div class="stat-item" style="--item-index: 2">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item" style="--item-index: 3">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Compliance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Overview -->
+    <section class="category-overview">
+      <div class="container">
+        <div class="overview-content">
+          <div class="overview-text">
+            <h2>Workplace Safety Solutions</h2>
+            <p>
+              Our safety equipment division is dedicated to protecting workers
+              across all industries. We provide comprehensive safety solutions
+              that meet and exceed international safety standards, ensuring
+              compliance and peace of mind in every workplace.
+            </p>
+
+            <div class="overview-features">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Certified Compliance</h3>
+                  <p>
+                    All safety equipment meets international standards including
+                    OSHA, ANSI, and CE certifications.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Safety Training</h3>
+                  <p>
+                    Comprehensive safety training programs and consultation
+                    services for workplace safety.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Safety Audits</h3>
+                  <p>
+                    Professional safety audits and risk assessments to identify
+                    and mitigate hazards.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview-image">
+            <img
+              src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+              alt="Safety Equipment"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Products -->
+    <section id="products" class="category-products">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Safety Equipment</h2>
+          <p class="section-description">
+            Explore our comprehensive range of safety equipment and protective
+            gear
+          </p>
+        </div>
+
+        <div class="products-filter">
+          <button class="filter-btn active" data-filter="all">
+            All Safety Equipment
+          </button>
+          <button class="filter-btn" data-filter="head">Head Protection</button>
+          <button class="filter-btn" data-filter="eye">Eye & Face</button>
+          <button class="filter-btn" data-filter="respiratory">
+            Respiratory
+          </button>
+          <button class="filter-btn" data-filter="hand">Hand Protection</button>
+          <button class="filter-btn" data-filter="body">Body Protection</button>
+          <button class="filter-btn" data-filter="fall">Fall Protection</button>
+        </div>
+
+        <div class="products-grid">
+          <!-- Head Protection -->
+          <div class="product-item" data-category="head">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Hard Hats"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Industrial Hard Hats</h3>
+              <p class="product-description">
+                ANSI-compliant hard hats with adjustable suspension systems for
+                maximum comfort and protection.
+              </p>
+              <div class="product-specs">
+                <span class="spec">ANSI Z89.1</span>
+                <span class="spec">Type I Class E</span>
+                <span class="spec">Ratchet Suspension</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="head">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Bump Caps"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Bump Caps</h3>
+              <p class="product-description">
+                Lightweight bump caps for protection against minor head impacts
+                in low-clearance areas.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Lightweight</span>
+                <span class="spec">Breathable</span>
+                <span class="spec">Adjustable</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eye & Face Protection -->
+          <div class="product-item" data-category="eye">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Safety Glasses"
+              />
+              <div class="product-badge new">New</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Safety Glasses</h3>
+              <p class="product-description">
+                Impact-resistant safety glasses with anti-fog coating and UV
+                protection.
+              </p>
+              <div class="product-specs">
+                <span class="spec">ANSI Z87.1</span>
+                <span class="spec">Anti-fog</span>
+                <span class="spec">UV Protection</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="eye">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Face Shields"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Face Shields</h3>
+              <p class="product-description">
+                Full-face protection shields for welding, grinding, and chemical
+                splash protection.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Polycarbonate</span>
+                <span class="spec">Adjustable Headgear</span>
+                <span class="spec">Chemical Resistant</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Respiratory Protection -->
+          <div class="product-item" data-category="respiratory">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Respirators"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Half-Face Respirators</h3>
+              <p class="product-description">
+                Comfortable half-face respirators with replaceable filter
+                cartridges for various hazards.
+              </p>
+              <div class="product-specs">
+                <span class="spec">NIOSH Approved</span>
+                <span class="spec">Dual Cartridge</span>
+                <span class="spec">Silicone Face Piece</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="respiratory">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Dust Masks"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Disposable Masks</h3>
+              <p class="product-description">
+                N95 and N99 disposable respirators for protection against
+                particulates and dust.
+              </p>
+              <div class="product-specs">
+                <span class="spec">N95/N99</span>
+                <span class="spec">Disposable</span>
+                <span class="spec">Comfortable Fit</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hand Protection -->
+          <div class="product-item" data-category="hand">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Work Gloves"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cut-Resistant Gloves</h3>
+              <p class="product-description">
+                High-performance cut-resistant gloves with excellent dexterity
+                and grip.
+              </p>
+              <div class="product-specs">
+                <span class="spec">ANSI A4</span>
+                <span class="spec">Nitrile Palm</span>
+                <span class="spec">15 Gauge</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="hand">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Chemical Gloves"
+              />
+              <div class="product-badge new">New</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Chemical Resistant Gloves</h3>
+              <p class="product-description">
+                Chemical-resistant gloves for handling hazardous chemicals and
+                solvents.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Nitrile</span>
+                <span class="spec">15 mil Thickness</span>
+                <span class="spec">Extended Cuff</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Body Protection -->
+          <div class="product-item" data-category="body">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Safety Vests"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">High-Visibility Vests</h3>
+              <p class="product-description">
+                ANSI Class 2 and 3 high-visibility safety vests with reflective
+                tape.
+              </p>
+              <div class="product-specs">
+                <span class="spec">ANSI 107</span>
+                <span class="spec">Class 2/3</span>
+                <span class="spec">Reflective Tape</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="body">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Coveralls"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Protective Coveralls</h3>
+              <p class="product-description">
+                Disposable and reusable coveralls for protection against
+                chemicals and contaminants.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Tyvek/SMS</span>
+                <span class="spec">Elastic Wrists</span>
+                <span class="spec">Front Zipper</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fall Protection -->
+          <div class="product-item" data-category="fall">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Safety Harness"
+              />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Full Body Harnesses</h3>
+              <p class="product-description">
+                Comfortable full-body harnesses with multiple D-rings for fall
+                arrest systems.
+              </p>
+              <div class="product-specs">
+                <span class="spec">ANSI Z359</span>
+                <span class="spec">5 D-Rings</span>
+                <span class="spec">Padding</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item" data-category="fall">
+            <div class="product-image">
+              <img
+                src="https://placehold.co/300x200/dc3545/ffffff?text=Safety+Product"
+                alt="Lanyards"
+              />
+              <div class="product-badge">Popular</div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Safety Lanyards</h3>
+              <p class="product-description">
+                Shock-absorbing lanyards and retractable lifelines for fall
+                protection systems.
+              </p>
+              <div class="product-specs">
+                <span class="spec">Shock Absorber</span>
+                <span class="spec">6ft Length</span>
+                <span class="spec">Double Leg</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-primary btn-quote">Get Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose Our Safety Equipment?</h2>
+          <p class="section-description">
+            Protecting lives with certified safety solutions
+          </p>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certified Compliance</h3>
+            <p>
+              All safety equipment meets and exceeds international safety
+              standards including OSHA, ANSI, and CE certifications.
+            </p>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Safety Training</h3>
+            <p>
+              Comprehensive safety training programs and workshops to ensure
+              proper equipment usage and workplace safety.
+            </p>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <h3>Safety Consultation</h3>
+            <p>
+              Professional safety audits and consultation services to identify
+              hazards and implement safety solutions.
+            </p>
+          </div>
+
+          <div class="advantage-item">
+            <div class="advantage-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24/7 Support</h3>
+            <p>
+              Round-the-clock support for safety equipment selection, training,
+              and emergency safety consultations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="contact-cta">
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-text">
+            <h2>Prioritize Workplace Safety</h2>
+            <p>
+              Contact our safety specialists for comprehensive safety solutions
+              tailored to your industry and workplace requirements.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn-primary">Safety Consultation</button>
+            <button class="btn-outline">Request Catalog</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <div class="logo-icon">
+                <div class="logo-symbol">
+                  <div class="logo-gear">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="logo-spark"></div>
+                  <div class="logo-accent"></div>
+                </div>
+              </div>
+              <div class="logo-text-container">
+                <span class="logo-text">Gulf Union</span>
+                <span class="logo-subtitle">INDUSTRIAL SOLUTIONS</span>
+              </div>
+            </div>
+            <p>
+              Leading provider of safety equipment and workplace safety
+              solutions for over 15 years.
+            </p>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> +966 11 123 4567</p>
+              <p><i class="fas fa-envelope"></i> info@gulfunionozone.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="welding.html">Welding Equipment</a></li>
+              <li><a href="electrical.html">Electrical Equipment</a></li>
+              <li><a href="automotive.html">Automotive Parts</a></li>
+              <li><a href="safety.html">Safety Equipment</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Safety Training</a></li>
+              <li><a href="#">Safety Audits</a></li>
+              <li><a href="#">Consultation</a></li>
+              <li><a href="#">Equipment Fitting</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Gulf Union Ozone. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/modern.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>
