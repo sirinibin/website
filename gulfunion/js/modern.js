@@ -710,11 +710,13 @@ This inquiry was submitted through the Gulf Union Ozone website contact form.
             }
         }
     }
-}
+    // End openWhatsAppQuoteModal
+
+} // Close ModernWebsite class
 
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', function () {
         new ModernWebsite();
     });
 } else {
@@ -923,7 +925,6 @@ function closeWhatsAppQuoteModal() {
     const modal = document.getElementById('whatsappQuoteModal');
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
-
     // Reset form
     document.getElementById('whatsappQuoteForm').reset();
 }
@@ -1000,12 +1001,14 @@ function openCertificateModal(imageSrc, imageAlt) {
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 }
+window.openCertificateModal = openCertificateModal;
 
 function closeCertificateModal() {
     const modal = document.getElementById('certificateModal');
     modal.style.display = 'none';
     document.body.style.overflow = 'auto';
 }
+//window.closeCertificateModal = closeCertificateModal;
 
 // Close modal when clicking outside the image
 window.addEventListener('click', function (event) {
@@ -1021,4 +1024,15 @@ window.addEventListener('keydown', function (event) {
         closeCertificateModal();
     }
 });
+
+// Download certificate image function
+function downloadCertificateImage() {
+    var img = document.getElementById('certificateModalImage');
+    if (!img || !img.src) return;
+    var link = document.createElement('a');
+    link.href = img.src;
+    link.download = img.alt || 'certificate.jpg';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }

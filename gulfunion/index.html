@@ -1392,9 +1392,37 @@
     </div>
 
     <!-- Certificate Modal -->
-    <div id="certificateModal" class="modal certificate-modal">
+    <div
+      id="certificateModal"
+      class="modal certificate-modal"
+      style="display: none"
+    >
       <div class="modal-content certificate-modal-content">
         <span class="close" onclick="closeCertificateModal()">&times;</span>
+        <button
+          id="downloadCertificateImage"
+          style="
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            z-index: 10;
+          "
+          onclick="downloadCertificateImage()"
+          title="Download Image"
+        >
+          <i class="fas fa-download" style="font-size: 20px"></i>
+        </button>
         <img id="certificateModalImage" src="" alt="" />
       </div>
     </div>
