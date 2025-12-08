@@ -803,39 +803,33 @@ function openWhatsAppChat() {
 }
 
 function downloadBrochure() {
-    // Show loading state
-    const button = event.target;
-    const originalContent = button.innerHTML;
-    button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating PDF...';
-    button.disabled = true;
-
-    // Add a small delay to show the loading state
-    setTimeout(() => {
-        try {
-            // Method 1: Try to generate PDF from HTML
-            generatePDFFromBrochure()
-                .then(() => {
-                    showNotification('Brochure downloaded successfully!', 'success');
-                })
-                .catch((error) => {
-                    console.error('PDF generation failed:', error);
-                    // Fallback: Open brochure in new window for manual printing
-                    window.open('brochure.html', '_blank');
-                    showNotification('Brochure opened for printing', 'info');
-                });
-        } catch (error) {
-            console.error('PDF download failed:', error);
-            // Fallback: Open brochure in new window for manual printing
-            window.open('brochure.html', '_blank');
-            showNotification('Brochure opened for printing', 'info');
-        } finally {
-            // Reset button state
+    // Generate PDF from brochure.html markup using jsPDF and html2canvas
+    showNotification('Generating brochure PDF...', 'info');
+    fetch('brochure.html')
+        .then(response => response.text())
+        .then(html => {
+            const brochureWindow = document.createElement('iframe');
+            brochureWindow.style.display = 'none';
+            document.body.appendChild(brochureWindow);
+            brochureWindow.contentDocument.open();
+            brochureWindow.contentDocument.write(html);
+            brochureWindow.contentDocument.close();
             setTimeout(() => {
-                button.innerHTML = originalContent;
-                button.disabled = false;
-            }, 2000);
-        }
-    }, 500);
+                html2canvas(brochureWindow.contentDocument.body, { scale: 2 }).then(canvas => {
+                    const imgData = canvas.toDataURL('image/png');
+                    const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+                    const pageWidth = pdf.internal.pageSize.getWidth();
+                    const pageHeight = pdf.internal.pageSize.getHeight();
+                    pdf.addImage(imgData, 'PNG', 0, 0, pageWidth, pageHeight);
+                    pdf.save('Gulf-Union-Ozone-Product-Catalog-2025.pdf');
+                    document.body.removeChild(brochureWindow);
+                    showNotification('Brochure PDF downloaded!', 'success');
+                });
+            }, 1000);
+        })
+        .catch(() => {
+            showNotification('Failed to generate PDF. Please try again.', 'error');
+        });
 }
 
 function downloadPDFDirect() {
