@@ -1082,7 +1082,18 @@
           <div class="contact-item">
             <div class="contact-icon">✉️</div>
             <div class="contact-label">Email</div>
-            <div class="contact-value">info@gulfunionozone.com</div>
+            <div class="contact-value" id="obfuscated-email-brochure"></div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                var user = 'info';
+                var domain = 'gulfunionozone.com';
+                var email = user + '@' + domain;
+                var el = document.getElementById('obfuscated-email-brochure');
+                if (el) {
+                  el.textContent = email;
+                }
+              });
+            </script>
           </div>
           <div class="contact-item">
             <div class="contact-icon">🌐</div>

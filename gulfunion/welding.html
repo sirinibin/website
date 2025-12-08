@@ -620,9 +620,34 @@
           <div class="footer-section">
             <h4 class="footer-title">Contact Info</h4>
             <div class="contact-info">
-              <p><i class="fas fa-phone"></i> +966 11 123 4567</p>
-              <p><i class="fas fa-envelope"></i> info@gulfunion.com</p>
-              <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+              <p>
+                <i class="fas fa-phone"></i> <span id="obfuscated-phone"></span>
+              </p>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  var phone = "+966 11 123 4567";
+                  var el = document.getElementById("obfuscated-phone");
+                  if (el) {
+                    el.textContent = phone;
+                  }
+                });
+              </script>
+              <p>
+                <i class="fas fa-envelope"></i>
+                <span id="obfuscated-email"></span>
+              </p>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  var user = "info";
+                  var domain = "gulfunionozone.com";
+                  var email = user + "@" + domain;
+                  var el = document.getElementById("obfuscated-email");
+                  if (el) {
+                    el.textContent = email;
+                  }
+                });
+              </script>
+              <p><i class="fas fa-map-marker-alt"></i> Jeddah, Saudi Arabia</p>
             </div>
           </div>
         </div>

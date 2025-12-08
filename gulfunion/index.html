@@ -1185,7 +1185,16 @@
                 </div>
                 <div class="contact-text">
                   <h4>Phone</h4>
-                  <p>+966 11 123 4567</p>
+                  <p id="obfuscated-phone"></p>
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      var phone = "+966 11 123 4567";
+                      var el = document.getElementById("obfuscated-phone");
+                      if (el) {
+                        el.textContent = phone;
+                      }
+                    });
+                  </script>
                 </div>
               </div>
 
@@ -1195,7 +1204,18 @@
                 </div>
                 <div class="contact-text">
                   <h4>Email</h4>
-                  <p>info@gulfunionozone.com</p>
+                  <p id="obfuscated-email"></p>
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      var user = "info";
+                      var domain = "gulfunionozone.com";
+                      var email = user + "@" + domain;
+                      var el = document.getElementById("obfuscated-email");
+                      if (el) {
+                        el.textContent = email;
+                      }
+                    });
+                  </script>
                 </div>
               </div>
 
@@ -1205,7 +1225,7 @@
                 </div>
                 <div class="contact-text">
                   <h4>Location</h4>
-                  <p>Riyadh, Saudi Arabia</p>
+                  <p>Jeddah, Saudi Arabia</p>
                 </div>
               </div>
             </div>
