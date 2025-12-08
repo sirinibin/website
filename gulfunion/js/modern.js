@@ -803,78 +803,62 @@ function openWhatsAppChat() {
 }
 
 function downloadBrochure() {
-    // Generate PDF from brochure.html markup using jsPDF and html2canvas
+    // Generate PDF from brochure.html markup using html2pdf.js for proper layout and styles
     showNotification('Generating brochure PDF...', 'info');
     fetch('brochure.html')
         .then(response => response.text())
         .then(html => {
-            const brochureWindow = document.createElement('iframe');
-            brochureWindow.style.display = 'none';
-            document.body.appendChild(brochureWindow);
-            brochureWindow.contentDocument.open();
-            brochureWindow.contentDocument.write(html);
-            brochureWindow.contentDocument.close();
-            setTimeout(() => {
-                html2canvas(brochureWindow.contentDocument.body, { scale: 2 }).then(canvas => {
-                    const imgData = canvas.toDataURL('image/png');
-                    const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-                    const pageWidth = pdf.internal.pageSize.getWidth();
-                    const pageHeight = pdf.internal.pageSize.getHeight();
-                    pdf.addImage(imgData, 'PNG', 0, 0, pageWidth, pageHeight);
-                    pdf.save('Gulf-Union-Ozone-Product-Catalog-2025.pdf');
-                    document.body.removeChild(brochureWindow);
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+            // Write <head> first
+            iframe.contentDocument.open();
+            iframe.contentDocument.write('<head>' + doc.head.innerHTML + '</head>');
+            // Then write <body>
+            iframe.contentDocument.write('<body>' + doc.body.innerHTML + '</body>');
+            iframe.contentDocument.close();
+            // Wait for fonts/styles to load
+            const waitForFonts = () => {
+                if (iframe.contentDocument.fonts && iframe.contentDocument.fonts.status !== 'loaded') {
+                    iframe.contentDocument.fonts.ready.then(generatePDF);
+                } else {
+                    setTimeout(generatePDF, 500);
+                }
+            };
+            function generatePDF() {
+                const pages = iframe.contentDocument.querySelectorAll('.page');
+                const wrapper = iframe.contentDocument.createElement('div');
+                pages.forEach(page => wrapper.appendChild(page.cloneNode(true)));
+                const opt = {
+                    margin: 0,
+                    filename: 'Gulf-Union-Ozone-Product-Catalog-2025.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 2, useCORS: true },
+                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+                };
+                window.html2pdf().set(opt).from(wrapper).save().then(() => {
+                    document.body.removeChild(iframe);
                     showNotification('Brochure PDF downloaded!', 'success');
                 });
-            }, 1000);
+            }
+            waitForFonts();
         })
         .catch(() => {
             showNotification('Failed to generate PDF. Please try again.', 'error');
         });
 }
 
-function downloadPDFDirect() {
-    // Create a link element and trigger download
+function downloadBrochure() {
+    // Instantly download the static PDF file
     const link = document.createElement('a');
-    link.href = 'assets/Gulf-Union-Ozone-Product-Catalog-2025.pdf';
-    link.download = 'Gulf-Union-Ozone-Product-Catalog-2025.pdf';
-    link.style.display = 'none';
-
+    link.href = 'assets/brochure.pdf';
+    link.download = 'GulfUnion-Brochure.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-
-    // Show success message
-    showNotification('Brochure downloaded successfully!', 'success');
-}
-
-async function generatePDFFromBrochure() {
-    // Check if we can use the browser's print to PDF functionality
-    if (window.navigator && window.navigator.share) {
-        // For modern browsers, open a print-optimized version
-        const printWindow = window.open('brochure.html', '_blank');
-        printWindow.onload = function () {
-            setTimeout(() => {
-                printWindow.print();
-            }, 1000);
-        };
-        return Promise.resolve();
-    } else {
-        // Fallback: Create a download link for the HTML brochure
-        const blob = await fetch('brochure.html').then(r => r.blob());
-        const url = URL.createObjectURL(blob);
-
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'Gulf-Union-Ozone-Brochure.html';
-        link.style.display = 'none';
-
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-
-        URL.revokeObjectURL(url);
-        return Promise.resolve();
-    }
 }
 
 function showNotification(message, type = 'info') {

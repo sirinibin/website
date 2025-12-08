@@ -5,6 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gulf Union Ozone - Product Catalog</title>
     <style>
+            /* Print/PDF optimization */
+            @media print {
+              body {
+                font-family: 'Inter', Arial, sans-serif !important;
+                background: #fff !important;
+                color: #333 !important;
+              }
+              .cover-page {
+                background: #2563eb !important;
+                color: #fff !important;
+                box-shadow: none !important;
+                padding: 40px 24px 24px 24px !important;
+              }
+              .cover-title {
+                font-size: 2.5rem !important;
+                font-weight: 700 !important;
+                margin: 40px 0 20px !important;
+              }
+              .cover-subtitle {
+                font-size: 1.3rem !important;
+                margin-bottom: 40px !important;
+              }
+              .cover-stats {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: center !important;
+                gap: 30px !important;
+                max-width: 500px !important;
+                margin: 0 auto 32px auto !important;
+              }
+              .cover-stat {
+                background: rgba(255,255,255,0.12) !important;
+                border-radius: 12px !important;
+                padding: 16px !important;
+                min-width: 120px !important;
+                text-align: center !important;
+              }
+              .logo-section {
+                margin-bottom: 32px !important;
+              }
+              .company-logo {
+                font-size: 3rem !important;
+                font-weight: 700 !important;
+              }
+              .company-tagline {
+                font-size: 1.2rem !important;
+                font-weight: 300 !important;
+              }
+              .page {
+                background: #fff !important;
+                color: #333 !important;
+                box-shadow: none !important;
+                padding: 24px !important;
+                margin: 0 !important;
+              }
+              .category-grid {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 20px !important;
+              }
+              .category-card {
+                background: #f8fafc !important;
+                border: 1px solid #e2e8f0 !important;
+                border-radius: 8px !important;
+                padding: 20px !important;
+                margin-bottom: 16px !important;
+                width: calc(50% - 20px) !important;
+                box-sizing: border-box !important;
+              }
+              .category-header {
+                display: flex !important;
+                align-items: center !important;
+                margin-bottom: 15px !important;
+              }
+              .category-icon {
+                width: 40px !important;
+                height: 40px !important;
+                background: linear-gradient(135deg, #2563eb, #0ea5e9) !important;
+                border-radius: 8px !important;
+                color: #fff !important;
+                font-size: 1.2rem !important;
+                margin-right: 15px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+              }
+              .category-name {
+                font-size: 1.3rem !important;
+                font-weight: 600 !important;
+                color: #1e293b !important;
+              }
+              .category-description {
+                color: #64748b !important;
+                margin-bottom: 15px !important;
+              }
+              .page-header {
+                border-bottom: 2px solid #2563eb !important;
+                margin-bottom: 16px !important;
+                padding-bottom: 8px !important;
+              }
+            }
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
       * {
@@ -347,7 +448,7 @@
         background: #f8fafc;
         padding: 15px;
         border-radius: 8px;
-        border-left: 4px solid #2563eb;
+        /* border-left: 4px solid #2563eb; */
         color: #475569;
         line-height: 1.6;
       }
@@ -403,7 +504,7 @@
         background: #f8fafc;
         padding: 20px;
         border-radius: 10px;
-        border-left: 4px solid #10b981;
+        /* border-left: 4px solid #10b981; */
         text-align: center;
       }
 
@@ -437,7 +538,7 @@
         background: #fef3c7;
         padding: 15px;
         border-radius: 8px;
-        border-left: 4px solid #f59e0b;
+        /* border-left: 4px solid #f59e0b; */
         color: #92400e;
         line-height: 1.6;
         font-size: 0.9rem;
@@ -456,7 +557,7 @@
         padding: 15px;
         background: #f0f9ff;
         border-radius: 8px;
-        border-left: 4px solid #0ea5e9;
+        /* border-left: 4px solid #0ea5e9; */
       }
 
       .benefit-icon {
@@ -482,6 +583,10 @@
     </style>
   </head>
   <body>
+    <!-- Cover Page -->
+    <div class="page cover-page">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <!-- Cover Page -->
     <div class="page cover-page">
       <div class="logo-section">
