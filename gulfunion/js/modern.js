@@ -781,7 +781,7 @@ function scrollToAbout() {
 
 function openWhatsAppChat() {
     // Gulf Union Ozone WhatsApp Business number
-    const phoneNumber = '966501234567'; // Replace with actual WhatsApp business number
+    const phoneNumber = '966550988062'; // Replace with actual WhatsApp business number
     const message = encodeURIComponent('Hello! I\'m interested in your industrial solutions. Could you please provide more information?');
 
     // Create WhatsApp URL
@@ -928,7 +928,7 @@ function sendWhatsAppQuote(event) {
     }
 
     // Gulf Union Ozone WhatsApp Business number
-    const phoneNumber = '966501234567'; // Replace with actual WhatsApp business number
+    const phoneNumber = '966550988062'; // Replace with actual WhatsApp business number
     const encodedMessage = encodeURIComponent(message);
 
     // Create WhatsApp URL

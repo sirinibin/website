@@ -9,9 +9,9 @@
 
     <!-- Meta Tags -->
     <meta
-      name="description"
-      content="Leading provider of industrial filtration and ozone solutions in Saudi Arabia. Trusted by industry leaders for quality and reliability."
-    />
+        <a href="https://wa.me/966554322784" target="_blank" aria-label="WhatsApp" class="branch-whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
     <meta
       name="keywords"
       content="industrial filters, ozone solutions, saudi arabia, gulf union, filtration systems"
@@ -42,9 +42,26 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-    <!-- Stylesheet -->
+        <a href="https://wa.me/966550988062" target="_blank" aria-label="WhatsApp" class="branch-whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <style>
+          .branch-whatsapp-icon {
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .branch-whatsapp-icon .fa-whatsapp {
+            color: #25D366 !important;
+            font-size: 2em !important;
+            line-height: 1;
+            vertical-align: middle;
+            transition: color 0.2s;
+          }
+          .branch-whatsapp-icon:hover .fa-whatsapp {
+            color: #128c7e !important;
+          }
+        </style>
     <link rel="stylesheet" href="css/modern.css" />
   </head>
   <body>
@@ -76,6 +93,16 @@
             </div>
           </div>
         </div>
+        <!-- WhatsApp icon for mobile header, left of menu icon -->
+        <a
+          href="https://wa.me/966550988062"
+          class="btn-whatsapp-mobile"
+          target="_blank"
+          aria-label="WhatsApp Chat"
+          style="display: none; margin-left: 8px; margin-right: 8px"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
 
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list">
@@ -83,9 +110,7 @@
               <a href="#home" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link" onclick="scrollToAbout()"
-                >About</a
-              >
+              <a href="#about" class="nav-link" onclick="scrollToAbout()">About</a>
             </li>
             <li class="nav-item dropdown">
               <a href="#products" class="nav-link">Products</a>
@@ -105,6 +130,9 @@
               </div>
             </li>
             <li class="nav-item">
+              <a href="#branches" class="nav-link" onclick="scrollToBranches()">Locations</a>
+            </li>
+            <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
@@ -120,10 +148,109 @@
             <button class="btn-primary" onclick="scrollToContact()">
               Contact Us
             </button>
+            <!-- WhatsApp icon for mobile header -->
+            <a
+              href="https://wa.me/966550988062"
+              class="btn-whatsapp-mobile"
+              target="_blank"
+              aria-label="WhatsApp Chat"
+              style="display: none; margin-left: 8px"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <style>
+              @media (max-width: 768px) {
+                .btn-whatsapp-mobile {
+                  display: flex !important;
+                  background: #25d366;
+                  color: #fff;
+                  border: none;
+                  border-radius: 50%;
+                  width: 44px;
+                  height: 44px;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 22px;
+                  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                  cursor: pointer;
+                  transition: background 0.2s;
+                }
+                .btn-whatsapp-mobile:hover {
+                  background: #128c7e;
+                }
+                .nav-actions .btn-primary,
+                .nav-actions .btn-secondary.btn-whatsapp {
+                  display: none !important;
+                }
+              }
+              /* Mobile Navigation Styles for nav-menu */
+              @media (max-width: 768px) {
+                .nav-menu {
+                  position: fixed;
+                  top: 0;
+                  right: -100vw;
+                  width: 80vw;
+                  max-width: 320px;
+                  height: 100vh;
+                  background: #fff;
+                  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+                  z-index: 1000;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 32px 24px 24px 24px;
+                  overflow-y: auto;
+                  transition: right 0.3s;
+                }
+                .nav-menu.open {
+                  right: 0;
+                }
+                .nav-list {
+                  flex-direction: column;
+                  width: 100%;
+                  padding: 0;
+                  margin: 0 0 24px 0;
+                  display: flex;
+                  gap: 16px;
+                }
+                .nav-list .nav-item {
+                  width: 100%;
+                }
+                .nav-list .nav-link {
+                  width: 100%;
+                  display: block;
+                  padding: 12px 0;
+                  font-size: 1.2em;
+                  color: #222;
+                  border-bottom: 1px solid #eee;
+                }
+                .nav-list .nav-link:last-child {
+                  border-bottom: none;
+                }
+                .nav-toggle {
+                  display: flex !important;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  width: 44px;
+                  height: 44px;
+                  cursor: pointer;
+                  z-index: 1100;
+                }
+                .nav-toggle .bar {
+                  width: 28px;
+                  height: 4px;
+                  background: #222;
+                  margin: 3px 0;
+                  border-radius: 2px;
+                  transition: all 0.3s;
+                }
+              }
+            </style>
           </div>
         </div>
 
-        <div class="nav-toggle" id="nav-toggle">
+        <div class="nav-toggle" id="nav-toggle" onclick="toggleMobileMenu()">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -1060,6 +1187,14 @@
                 <div class="detail-item">
                   <i class="fas fa-phone"></i>
                   <span>055 432 2784</span>
+                  <a
+                    href="https://wa.me/966554322784"
+                    target="_blank"
+                    aria-label="WhatsApp"
+                    style="margin-left: 8px; color: #25d366; display: inline-block; vertical-align: middle;"
+                  >
+                    <i class="fab fa-whatsapp" style="font-size: 1.95em; color: #25d366;"></i>
+                  </a>
                 </div>
                 <div class="detail-item">
                   <i class="fas fa-clock"></i>
@@ -1105,6 +1240,14 @@
                 <div class="detail-item">
                   <i class="fas fa-phone"></i>
                   <span>055 098 8062</span>
+                  <a
+                    href="https://wa.me/966550988062"
+                    target="_blank"
+                    aria-label="WhatsApp"
+                    style="margin-left: 8px; color: #25d366; display: inline-block; vertical-align: middle;"
+                  >
+                    <i class="fab fa-whatsapp" style="font-size: 1.95em; color: #25d366;"></i>
+                  </a>
                 </div>
                 <div class="detail-item">
                   <i class="fas fa-tools"></i>
@@ -1149,6 +1292,14 @@
                 <div class="detail-item">
                   <i class="fas fa-phone"></i>
                   <span>055 432 2784</span>
+                  <a
+                    href="https://wa.me/966554322784"
+                    target="_blank"
+                    aria-label="WhatsApp"
+                    style="margin-left: 8px; color: #25d366; display: inline-block; vertical-align: middle;"
+                  >
+                    <i class="fab fa-whatsapp" style="font-size: 1.95em; color: #25d366;"></i>
+                  </a>
                 </div>
                 <div class="detail-item">
                   <i class="fas fa-shipping-fast"></i>
@@ -1483,6 +1634,43 @@
         // emailjs.init('YOUR_PUBLIC_KEY'); // Uncomment and add your EmailJS public key
       })();
     </script>
+    <script>
+      // Mobile nav menu toggle
+      function toggleMobileMenu() {
+        var navMenu = document.getElementById('nav-menu');
+        if (navMenu.classList.contains('open')) {
+          navMenu.classList.remove('open');
+        } else {
+          navMenu.classList.add('open');
+        }
+      }
+      // Optional: Close menu on link click (mobile)
+      document.addEventListener('DOMContentLoaded', function() {
+        var navLinks = document.querySelectorAll('.nav-list .nav-link');
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            var navMenu = document.getElementById('nav-menu');
+            if (window.innerWidth <= 768) navMenu.classList.remove('open');
+          });
+        });
+      });
+    </script>
     <script src="js/modern.js"></script>
+    <script>
+      // Smooth scroll to branches section
+      function scrollToBranches() {
+        var section = document.getElementById('branches');
+        if (section) {
+          var yOffset = 0;
+          // If mobile, offset by nav height (approx 60px)
+          if (window.innerWidth <= 768) {
+            var nav = document.getElementById('navbar');
+            yOffset = nav ? nav.offsetHeight : 60;
+          }
+          var y = section.getBoundingClientRect().top + window.pageYOffset - yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+    </script>
   </body>
 </html>
