@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      AI Engineering Services - Python, FastAPI, LLM, Agentic AI, GenAI,
+      VectorDB | Startup Tech
+    </title>
+    <meta
+      name="description"
+      content="Expert AI Engineering services: Python, FastAPI, LLM integration, OpenAI, Ollama, Agentic AI, GenAI pipelines, VectorDB, Vector Search, MCP, Vibe Coding, SST, TTS, GCP AI APIs. Hire AI engineers from Startup Tech."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="AI Engineering, Python, FastAPI, LLM, OpenAI, Ollama, Agentic AI, GenAI, VectorDB, Vector Search, MCP, Model Context Protocol, Vibe Coding, SST, TTS, Speech to Text, Text to Speech, GCP AI APIs, hire AI engineer, AI consultant, AI development services"
+    />
+    <link
+      rel="canonical"
+      href="https://www.startuptech.uk/ai-engineering-services.html"
+    />
+    <link
+      rel="icon"
+      href="./images/logos/icon.gif"
+      type="image/gif"
+      sizes="32x54"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.startuptech.uk/ai-engineering-services.html"
+    />
+    <meta
+      property="og:title"
+      content="AI Engineering Services - Python, FastAPI, LLM, Agentic AI | Startup Tech"
+    />
+    <meta
+      property="og:description"
+      content="Build production-grade AI solutions: LLMs, Agentic AI, GenAI pipelines, VectorDB, MCP, Vibe Coding, GCP APIs. Expert AI engineers for hire."
+    />
+    <meta
+      property="og:image"
+      content="https://www.startuptech.uk/images/logos/og_image.webp"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Engineering Services",
+        "description": "Expert AI Engineering services including Python, FastAPI, LLM integration, OpenAI, Ollama, Agentic AI, GenAI, VectorDB, Vector Search, MCP, Vibe Coding, SST, TTS, GCP AI APIs.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Startup Tech Consultancy",
+          "url": "https://www.startuptech.uk"
+        }
+      }
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Mulish", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7;
+        background: #f4f6f9;
+        color: #444;
+      }
+
+      /* ── Header ─────────────────────────────────── */
+      .header {
+        background: linear-gradient(
+          135deg,
+          #1a1a2e 0%,
+          #16213e 50%,
+          #0f3460 100%
+        );
+        color: white;
+        padding: 15px 0;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .logo a {
+        display: block;
+        line-height: 0;
+      }
+      .logo img {
+        height: 44px;
+        width: auto;
+      }
+      .nav {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .nav a {
+        color: rgba(255, 255, 255, 0.85);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 8px 14px;
+        border-radius: 6px;
+        transition: all 0.2s;
+      }
+      .nav a:hover,
+      .nav a.active {
+        background: rgba(100, 166, 110, 0.25);
+        color: #64a66e;
+      }
+      @media (max-width: 768px) {
+        .header-container {
+          flex-direction: column;
+        }
+        .logo img {
+          height: 38px;
+        }
+      }
+
+      /* ── Hero Banner ─────────────────────────────── */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          #1a1a2e 0%,
+          #0f3460 60%,
+          #162447 100%
+        );
+        color: white;
+        padding: 80px 24px 60px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(100, 166, 110, 0.12) 0%,
+          transparent 60%
+        );
+        pointer-events: none;
+      }
+      .hero-badge {
+        display: inline-block;
+        background: rgba(100, 166, 110, 0.2);
+        border: 1px solid #64a66e;
+        color: #64a66e;
+        padding: 6px 18px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+      .hero h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+      .hero h1 span {
+        color: #64a66e;
+      }
+      .hero p {
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        color: rgba(255, 255, 255, 0.8);
+        max-width: 700px;
+        margin: 0 auto 36px;
+      }
+      .hero-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn-primary {
+        background: #64a66e;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        transition:
+          background 0.3s,
+          transform 0.2s;
+      }
+      .btn-primary:hover {
+        background: #4e8a58;
+        transform: translateY(-1px);
+      }
+      .btn-outline {
+        background: transparent;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 6px;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        transition: all 0.3s;
+      }
+      .btn-outline:hover {
+        border-color: #64a66e;
+        color: #64a66e;
+      }
+
+      /* ── Tech Pills ──────────────────────────────── */
+      .tech-strip {
+        background: white;
+        padding: 28px 24px;
+        text-align: center;
+        border-bottom: 1px solid #e8eaed;
+      }
+      .tech-strip p {
+        font-size: 13px;
+        font-weight: 700;
+        color: #999;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      .pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .pill {
+        background: #f0faf2;
+        border: 1px solid #c3e6cb;
+        color: #2d7a3c;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      /* ── Main Layout ─────────────────────────────── */
+      .container {
+        max-width: 1200px;
+        margin: 48px auto;
+        padding: 0 24px;
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 40px;
+        align-items: start;
+      }
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        .sidebar {
+          order: -1;
+        }
+      }
+
+      /* ── Content Card ────────────────────────────── */
+      .content-card {
+        background: white;
+        border-radius: 12px;
+        padding: 48px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+      }
+      @media (max-width: 600px) {
+        .content-card {
+          padding: 28px 20px;
+        }
+      }
+
+      .breadcrumb {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 28px;
+      }
+      .breadcrumb a {
+        color: #64a66e;
+        text-decoration: none;
+      }
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      h2 {
+        color: #1a1a2e;
+        font-size: 1.8em;
+        font-weight: 800;
+        margin: 40px 0 16px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #f0f0f0;
+      }
+      h2:first-of-type {
+        margin-top: 0;
+      }
+      h3 {
+        color: #64a66e;
+        font-size: 1.25em;
+        font-weight: 700;
+        margin: 30px 0 12px;
+      }
+      p {
+        margin-bottom: 16px;
+        color: #555;
+      }
+      ul,
+      ol {
+        margin: 16px 0;
+        padding-left: 28px;
+      }
+      li {
+        margin: 10px 0;
+        color: #555;
+      }
+      li strong {
+        color: #333;
+      }
+
+      .highlight-box {
+        background: linear-gradient(135deg, #e8f5e8, #f0fdf4);
+        border-left: 4px solid #64a66e;
+        padding: 28px 32px;
+        margin: 32px 0;
+        border-radius: 10px;
+      }
+      .highlight-box h3 {
+        margin-top: 0;
+      }
+      .highlight-box p {
+        margin-bottom: 0;
+      }
+
+      /* ── Service Cards Grid ──────────────────────── */
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        margin: 24px 0 32px;
+      }
+      .service-card {
+        background: #f8fffe;
+        border: 1px solid #d4edda;
+        border-radius: 10px;
+        padding: 24px;
+        transition:
+          box-shadow 0.2s,
+          transform 0.2s;
+      }
+      .service-card:hover {
+        box-shadow: 0 8px 24px rgba(100, 166, 110, 0.15);
+        transform: translateY(-3px);
+      }
+      .service-card .icon {
+        font-size: 28px;
+        margin-bottom: 12px;
+      }
+      .service-card h4 {
+        color: #1a1a2e;
+        font-size: 1.05em;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .service-card p {
+        font-size: 14px;
+        margin: 0;
+        color: #666;
+      }
+
+      /* ── Process Steps ───────────────────────────── */
+      .steps {
+        counter-reset: step;
+        margin: 24px 0;
+      }
+      .step {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 24px;
+        align-items: flex-start;
+      }
+      .step-num {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        background: #64a66e;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 15px;
+      }
+      .step-body h4 {
+        color: #1a1a2e;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .step-body p {
+        font-size: 14px;
+        margin: 0;
+        color: #666;
+      }
+
+      /* ── Sidebar ─────────────────────────────────── */
+      .sidebar {
+        position: sticky;
+        top: 90px;
+      }
+      .sidebar-card {
+        background: white;
+        border-radius: 12px;
+        padding: 28px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+        margin-bottom: 24px;
+      }
+      .sidebar-card h3 {
+        color: #1a1a2e;
+        font-size: 1.1em;
+        margin: 0 0 20px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #f0f0f0;
+      }
+      .sidebar-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .sidebar-card li {
+        padding: 9px 0;
+        border-bottom: 1px solid #f5f5f5;
+        font-size: 14px;
+        color: #555;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .sidebar-card li:last-child {
+        border-bottom: none;
+      }
+      .sidebar-card li::before {
+        content: "✓";
+        color: #64a66e;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .contact-card {
+        background: linear-gradient(135deg, #1a1a2e, #0f3460);
+        color: white;
+        border-radius: 12px;
+        padding: 28px;
+        text-align: center;
+      }
+      .contact-card h3 {
+        color: white;
+        border: none;
+        padding: 0;
+        margin: 0 0 12px;
+      }
+      .contact-card p {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      .contact-card .btn-primary {
+        display: block;
+        text-align: center;
+      }
+
+      /* ── Use Cases ───────────────────────────────── */
+      .use-case-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin: 20px 0;
+      }
+      .use-case {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 18px 20px;
+        border-left: 3px solid #64a66e;
+      }
+      .use-case strong {
+        color: #1a1a2e;
+        display: block;
+        margin-bottom: 4px;
+      }
+      .use-case span {
+        font-size: 13px;
+        color: #666;
+      }
+
+      /* ── Footer ──────────────────────────────────── */
+      .footer {
+        background: #1a1a2e;
+        color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        padding: 32px 24px;
+        margin-top: 64px;
+        font-size: 14px;
+      }
+      .footer a {
+        color: #64a66e;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* ── CTA Section ──────────────────────────────── */
+      .cta-section {
+        background: linear-gradient(135deg, #1a1a2e, #0f3460);
+        color: white;
+        padding: 64px 24px;
+        text-align: center;
+        margin-top: 64px;
+      }
+      .cta-section h2 {
+        color: white;
+        border: none;
+        padding: 0;
+        margin: 0 0 16px;
+        font-size: 2em;
+      }
+      .cta-section p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 32px;
+        font-size: 1.1em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ── Header ── -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="images/logos/logo-white-transparent.webp"
+              width="209"
+              height="44"
+              alt="Startup Tech - AI Engineering Services"
+            />
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#services">Services</a>
+          <a href="#" class="active">AI Engineering</a>
+          <a href="/#stack">Tech Stack</a>
+          <a href="zatca-phase-2-services.html">ZATCA Phase 2</a>
+          <a href="javascript:void(Tawk_API.toggle())">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="hero-badge">New Service Offering</div>
+      <h1>AI Engineering <span>Services</span></h1>
+      <p>
+        We build production-grade intelligent applications using the latest AI
+        stack — LLMs, Agentic AI, GenAI pipelines, VectorDB, MCP, and GCP AI
+        APIs.
+      </p>
+      <div class="hero-buttons">
+        <a href="javascript:void(Tawk_API.toggle())" class="btn-primary"
+          >Get Free Consultation</a
+        >
+        <a href="/#services" class="btn-outline">Explore All Services</a>
+      </div>
+    </section>
+
+    <!-- ── Tech Pills ── -->
+    <div class="tech-strip">
+      <p>Our AI Engineering Stack</p>
+      <div class="pills">
+        <span class="pill">Python</span>
+        <span class="pill">FastAPI</span>
+        <span class="pill">LLM</span>
+        <span class="pill">OpenAI APIs</span>
+        <span class="pill">Ollama</span>
+        <span class="pill">Agentic AI</span>
+        <span class="pill">GenAI</span>
+        <span class="pill">VectorDB</span>
+        <span class="pill">Vector Search</span>
+        <span class="pill">MCP</span>
+        <span class="pill">Vibe Coding</span>
+        <span class="pill">SST</span>
+        <span class="pill">TTS</span>
+        <span class="pill">GCP AI APIs</span>
+      </div>
+    </div>
+
+    <!-- ── Main Content ── -->
+    <div class="container">
+      <!-- Left: Content -->
+      <main class="content-card">
+        <div class="breadcrumb">
+          <a href="/">Home</a> &rsaquo;
+          <a href="/#services">Services</a> &rsaquo; AI Engineering
+        </div>
+
+        <h2>End-to-End AI Engineering</h2>
+        <p>
+          At Startup Tech, we go beyond standard software development — we build
+          <strong>intelligent, AI-powered systems</strong>
+          that automate complex workflows, understand language, generate
+          insights, and communicate naturally. From integrating large language
+          models to designing full autonomous agent pipelines, we deliver AI
+          solutions that are reliable, scalable, and production-ready.
+        </p>
+
+        <div class="highlight-box">
+          <h3>Why AI Engineering now?</h3>
+          <p>
+            The AI landscape has shifted from experimentation to production.
+            Businesses that deploy intelligent agents, semantic search, voice
+            interfaces, and generative pipelines today gain a significant
+            competitive edge. Our engineers bridge the gap between cutting-edge
+            AI research and real-world business value.
+          </p>
+        </div>
+
+        <!-- Service Cards -->
+        <h2>What We Build</h2>
+
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="icon">🤖</div>
+            <h4>LLM Integration</h4>
+            <p>
+              Connect your products to OpenAI GPT-4o, Claude, Gemini, Mistral,
+              and open-source models via Ollama — with custom prompt
+              engineering, RAG pipelines, and fine-tuning.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">🧠</div>
+            <h4>Agentic AI Systems</h4>
+            <p>
+              Design and deploy autonomous AI agents that plan, reason, use
+              tools, and complete multi-step tasks — powered by LangChain,
+              LangGraph, CrewAI, and MCP.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">🔍</div>
+            <h4>VectorDB &amp; Vector Search</h4>
+            <p>
+              Build semantic search, recommendation, and document Q&amp;A
+              systems using Pinecone, Weaviate, Qdrant, Chroma, and pgvector
+              with high-precision embedding pipelines.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">🎙️</div>
+            <h4>Speech-to-Text (SST)</h4>
+            <p>
+              Integrate real-time and batch SST using Whisper, Google Cloud
+              Speech-to-Text, and other GCP AI APIs for voice-enabled
+              applications and transcription services.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">🔊</div>
+            <h4>Text-to-Speech (TTS)</h4>
+            <p>
+              Add natural-sounding voice output with ElevenLabs, OpenAI TTS,
+              Google Cloud TTS — for AI assistants, accessibility features, and
+              voice agents.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">⚡</div>
+            <h4>FastAPI AI Backends</h4>
+            <p>
+              Build high-performance Python API backends with FastAPI, async
+              processing, streaming responses, and robust integration layers for
+              AI model serving.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">🔗</div>
+            <h4>MCP (Model Context Protocol)</h4>
+            <p>
+              Implement Anthropic's MCP standard to create universal tool
+              interfaces that connect AI agents to your databases, APIs, and
+              internal systems.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">☁️</div>
+            <h4>GCP AI APIs</h4>
+            <p>
+              Leverage Google Cloud AI: Vertex AI, Gemini API, Cloud Vision,
+              Natural Language, Translation, Document AI, and more — integrated
+              into your workflows.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">✨</div>
+            <h4>Vibe Coding &amp; AI-Assisted Dev</h4>
+            <p>
+              We use the latest AI-assisted development workflows — GitHub
+              Copilot, Cursor, and custom coding agents — to ship features
+              faster without sacrificing quality.
+            </p>
+          </div>
+        </div>
+
+        <!-- GenAI Section -->
+        <h2>Generative AI (GenAI) Solutions</h2>
+        <p>
+          We build generative AI applications that create real business value —
+          from automated content generation and intelligent document processing
+          to custom AI copilots embedded directly in your products.
+        </p>
+        <ul>
+          <li>
+            <strong>RAG (Retrieval-Augmented Generation)</strong> — Ground LLMs
+            in your private knowledge base for accurate, hallucination-resistant
+            answers.
+          </li>
+          <li>
+            <strong>Custom AI Copilots</strong> — Embed AI assistants into your
+            web or desktop apps that understand your domain-specific context.
+          </li>
+          <li>
+            <strong>Document Intelligence</strong> — Extract, classify, and
+            summarise structured and unstructured documents automatically.
+          </li>
+          <li>
+            <strong>AI Content Pipelines</strong> — Generate, review, and
+            publish content at scale with human-in-the-loop oversight.
+          </li>
+          <li>
+            <strong>Multimodal AI</strong> — Combine vision, text, and audio in
+            unified AI workflows using GPT-4o, Gemini, and Claude.
+          </li>
+        </ul>
+
+        <!-- Agentic AI Section -->
+        <h2>Agentic AI &amp; MCP</h2>
+        <p>
+          Agentic AI is the next frontier — AI systems that don't just answer
+          questions, but autonomously take actions, use tools, collaborate with
+          other agents, and complete complex long-horizon tasks. We design and
+          deploy production-grade agentic systems using proven frameworks and
+          the new MCP standard.
+        </p>
+
+        <h3>What Our Agents Can Do</h3>
+        <ul>
+          <li>
+            Browse the web, query databases, and call external APIs autonomously
+          </li>
+          <li>Write, test, and debug code using AI coding agents</li>
+          <li>Research, summarise, and produce structured reports on demand</li>
+          <li>
+            Coordinate multi-agent pipelines — researcher, writer, reviewer,
+            publisher
+          </li>
+          <li>
+            Monitor systems and trigger alerts or corrective actions
+            automatically
+          </li>
+          <li>
+            Handle customer support tickets end-to-end without human escalation
+          </li>
+        </ul>
+
+        <h3>MCP — Model Context Protocol</h3>
+        <p>
+          MCP is Anthropic's open standard for connecting AI models to external
+          context sources and tools. We implement MCP servers that expose your
+          internal systems — databases, file systems, REST APIs, CRMs — as
+          first-class tools that any MCP-compatible AI agent (Claude, etc.) can
+          use securely.
+        </p>
+
+        <!-- Process -->
+        <h2>Our Delivery Process</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Discovery &amp; Scoping</h4>
+              <p>
+                We understand your business problem, data sources, and success
+                criteria before recommending any AI approach.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Proof of Concept</h4>
+              <p>
+                We build a focused PoC in 1–2 weeks so you can evaluate accuracy
+                and feasibility before committing to full development.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Production Development</h4>
+              <p>
+                Full-stack AI solution built with Python, FastAPI, your chosen
+                LLMs, vector stores, and cloud infrastructure.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h4>Evaluation &amp; Safety</h4>
+              <p>
+                Rigorous evaluation of model outputs, hallucination mitigation,
+                guardrails, and safety testing before go-live.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">5</div>
+            <div class="step-body">
+              <h4>Deployment &amp; Monitoring</h4>
+              <p>
+                Deploy to AWS, GCP, or Azure with observability, cost
+                monitoring, and continuous improvement feedback loops.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Use Cases -->
+        <h2>Industry Use Cases</h2>
+        <div class="use-case-grid">
+          <div class="use-case">
+            <strong>E-Commerce</strong>
+            <span
+              >AI product recommendations, semantic search, voice shopping
+              assistant</span
+            >
+          </div>
+          <div class="use-case">
+            <strong>Healthcare</strong>
+            <span
+              >Clinical note summarisation, patient Q&amp;A bots, medical
+              document extraction</span
+            >
+          </div>
+          <div class="use-case">
+            <strong>Finance &amp; Fintech</strong>
+            <span
+              >AI fraud detection, document intelligence, automated reporting
+              agents</span
+            >
+          </div>
+          <div class="use-case">
+            <strong>Legal &amp; Compliance</strong>
+            <span
+              >Contract analysis, regulation Q&amp;A, compliance audit
+              automation</span
+            >
+          </div>
+          <div class="use-case">
+            <strong>HR &amp; Recruitment</strong>
+            <span
+              >AI resume screening, interview coaching bots, talent
+              matching</span
+            >
+          </div>
+          <div class="use-case">
+            <strong>Customer Support</strong>
+            <span
+              >Agentic support bots, ticket triage, knowledge base Q&amp;A</span
+            >
+          </div>
+          <div class="use-case">
+            <strong>Education &amp; Training</strong>
+            <span
+              >Personalised learning agents, automated assessment, content
+              generation</span
+            >
+          </div>
+          <div class="use-case">
+            <strong>Manufacturing</strong>
+            <span
+              >Predictive maintenance AI, visual quality inspection, ops
+              copilots</span
+            >
+          </div>
+        </div>
+
+        <!-- Local LLMs -->
+        <h2>On-Premise &amp; Open-Source LLMs with Ollama</h2>
+        <p>
+          Not every business can send data to OpenAI. We deploy and manage
+          <strong>self-hosted, on-premise LLMs</strong>
+          using Ollama — running Llama 3, Mistral, Phi-3, Gemma, and other
+          open-source models on your own infrastructure for complete data
+          privacy and compliance.
+        </p>
+        <ul>
+          <li>
+            No data leaves your infrastructure — ideal for GDPR, HIPAA, and
+            financial regulations
+          </li>
+          <li>Lower long-term inference costs versus API-based models</li>
+          <li>Customisable models fine-tuned on your proprietary data</li>
+          <li>
+            Hybrid deployments — local models for sensitive data, cloud APIs for
+            general tasks
+          </li>
+        </ul>
+
+        <div class="highlight-box">
+          <h3>Ready to Build Your AI Solution?</h3>
+          <p>
+            Whether you need a quick PoC or a full production AI system, our
+            engineers are ready to help. Get a free 30-minute consultation to
+            discuss your requirements.
+          </p>
+          <br />
+          <a href="javascript:void(Tawk_API.toggle())" class="btn-primary"
+            >Talk to an AI Engineer</a
+          >
+          &nbsp;&nbsp;
+          <a
+            href="/"
+            class="btn-outline"
+            style="
+              display: inline-block;
+              margin-top: 8px;
+              padding: 13px 28px;
+              border-radius: 6px;
+              border: 2px solid #64a66e;
+              color: #64a66e;
+              font-weight: 700;
+              text-decoration: none;
+            "
+            >View All Services</a
+          >
+        </div>
+
+        <p style="margin-top: 40px">
+          <a href="/" class="btn-primary">← Return to Homepage</a>
+          &nbsp;
+          <a
+            href="zatca-phase-2-services.html"
+            class="btn-outline"
+            style="
+              display: inline-block;
+              margin-top: 8px;
+              padding: 13px 28px;
+              border-radius: 6px;
+              border: 2px solid #64a66e;
+              color: #64a66e;
+              font-weight: 700;
+              text-decoration: none;
+            "
+            >ZATCA Phase 2 Services</a
+          >
+        </p>
+      </main>
+
+      <!-- Right: Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h3>AI Engineering Services</h3>
+          <ul>
+            <li>LLM Integration (OpenAI, Claude, Gemini)</li>
+            <li>Ollama — Self-hosted Models</li>
+            <li>Agentic AI Systems</li>
+            <li>GenAI Pipelines &amp; RAG</li>
+            <li>VectorDB &amp; Vector Search</li>
+            <li>Model Context Protocol (MCP)</li>
+            <li>FastAPI AI Backends</li>
+            <li>Speech-to-Text (SST / Whisper)</li>
+            <li>Text-to-Speech (TTS)</li>
+            <li>GCP AI &amp; Vertex AI</li>
+            <li>Vibe Coding Workflows</li>
+            <li>AI Evaluation &amp; Safety</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Technologies &amp; Frameworks</h3>
+          <ul>
+            <li>Python 3.12+</li>
+            <li>FastAPI &amp; Pydantic</li>
+            <li>LangChain / LangGraph</li>
+            <li>CrewAI / AutoGen</li>
+            <li>OpenAI SDK</li>
+            <li>Anthropic Claude SDK</li>
+            <li>Ollama + Llama 3 / Mistral</li>
+            <li>Pinecone / Qdrant / Chroma</li>
+            <li>Whisper / ElevenLabs</li>
+            <li>Google Vertex AI</li>
+            <li>AWS Bedrock</li>
+            <li>Docker &amp; Kubernetes</li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <h3>Start Your AI Project</h3>
+          <p>
+            Free 30-min consultation with our AI engineers. No commitment
+            required.
+          </p>
+          <a href="javascript:void(Tawk_API.toggle())" class="btn-primary"
+            >Chat With Us Now</a
+          >
+          <br /><br />
+          <a
+            href="mailto:info@startuptech.uk"
+            style="color: #64a66e; font-size: 13px; text-decoration: none"
+            >info@startuptech.uk</a
+          >
+        </div>
+      </aside>
+    </div>
+    <!-- /.container -->
+
+    <!-- ── CTA Banner ── -->
+    <section class="cta-section">
+      <h2>Let's Build Something Intelligent Together</h2>
+      <p>
+        From LLM integration to full autonomous agent systems — we turn AI
+        possibilities into production reality.
+      </p>
+      <div class="hero-buttons">
+        <a href="javascript:void(Tawk_API.toggle())" class="btn-primary"
+          >Get Free Consultation</a
+        >
+        <a href="/" class="btn-outline">See Our Work</a>
+      </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+      <p>
+        &copy; 2026 Startup Tech Consultancy. All rights reserved. |
+        <a href="/">Home</a> &bull; <a href="/#services">Services</a> &bull;
+        <a href="zatca-phase-2-services.html">ZATCA Phase 2</a> &bull;
+        <a href="mailto:info@startuptech.uk">info@startuptech.uk</a>
+      </p>
+    </footer>
+
+    <!-- Tawk.to Live Chat -->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5f4a3d7e4704467e89f0bf42/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+  </body>
+</html>
